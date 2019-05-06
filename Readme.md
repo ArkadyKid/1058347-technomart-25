@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Аркадий Киданов](https://up.htmlacademy.ru/htmlcss/25/user/1058347).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
 
 ---
 
