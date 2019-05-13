@@ -10,72 +10,77 @@
     <header class="header">
         <div class="header__top">
             <div class="container">
-                <div class="header__logo">
-                    <a href="index.html">
-                        <img src="img/logo.png" alt="ТЕХНОМАРТ">
+                <div class="header__logo logo">
+                    <a href="index.html" class="logo__link">
+                        <img src="img/logo.png" alt="ТЕХНОМАРТ" class="logo__image">
                     </a>
                 </div>
-                <form action="#" class="header__search">
-                    <button name="search-button"></button>
-                    <input type="search" name="search" placeholder="Поиск:">
+                <form action="#" class="header__search search">
+                    <button name="search-button" class="search__button"></button>
+                    <input type="search" class="search__input" name="search" placeholder="Поиск:">
                 </form>
-                <p class="header__bookmarks">
-                    <a href="#">Закладки: <span class="bookmarks__value">0</span></a>
-                </p>
-                <p class="header__cart">
-                    <a href="#">Корзина: <span class="cart__value">10</span></a>
-                </p>
-                <p class="header__checkout">
-                    <a href="#">Оформить заказ</a>
-                </p>
+                <div class="bookmarks">
+                    <a href="#" class="bookmarks__link">Закладки: <span class="bookmarks__value">0</span></a>
+                </div>
+                <div class="cart">
+                    <a href="#" class="cart__link">Корзина: <span class="cart__value">10</span></a>
+                </div>
+                <div class="checkout">
+                    <a href="#" class="checkout__button">Оформить заказ</a>
+                </div>
             </div>
         </div>
-        <div class="header__middle container">
-            <section class="header__description">
-                <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-            </section>
-            <div class="header__contacts">
-                <p>
-                    <a href="tel:+7_(812)_555-05-55" class="header__phone">+7 (812) 555-05-55</a>
-                </p>
-                <p class="header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <div class="container">
+            <div class="header__middle">
+                <section class="header__description">
+                    <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+                </section>
+                <div class="header__contacts">
+                    <span class="header__phone-wrapper">
+                        <a href="tel:+78125550555" class="header__phone-link">+7 (812) 555-05-55</a>
+                    </span>
+                    <span class="header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+                </div>
+                <div class="user-menu">
+                    <p class="user-menu__name-blog">
+                        <a href="#" class="user-menu__name">Равшан Джамшутович</a>
+                        <a href="#" class="user-menu__quit-button">Выход</a>
+                    </p>
+                    <ul class="user-menu__interface">
+                        <li class="user-menu__orders">
+                            <a href="#" class="user-menu__user-order">Мои заказы</a>
+                        </li>
+                        <li class="user-menu__info">
+                            <a href="#" class="user-menu__account">Личный кабинет</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="header__user-menu">
-                <p class="user-menu__name-blog">
-                    <a href="#">Равшан Джамшутович</a>
-                    <a href="#">
-                        <!--кнопка выхода -->
-                    </a>
-                </p>
-                <ul class="user-menu__interface">
-                    <li class="user-menu__orders"><a href="">Мои заказы</a></li>
-                    <li class="user-menu__info"><a href="">Личный кабинет</a></li>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="index.html" class="header__nav-link">Главная</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">Компания</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link">Каталог</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">Новости</a></li>
+                    <li class="header__nav__item">
+                      <a href="#" class="header__nav-link">Спецпредложения</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">Доставка</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">Контакты</a>
+                    </li>
                 </ul>
-            </div>
+            </nav>
         </div>
-        <nav class="header__nav container">
-            <ul class="header__nav__list">
-                <li class="header__nav__item">
-                    <a href="index.html" class="header__nav__link">Главная</a>
-                </li>
-                <li class="header__nav__item">
-                    <a href="#" class="header__nav__link">Компания</a>
-                </li>
-                <li class="header__nav__item">
-                    <a class="header__nav__link">Каталог</a>
-                </li>
-                <li class="header__nav__item">
-                    <a href="#" class="header__nav__link">Новости</a></li>
-                <li class="header__nav__item"><a href="#" class="header__nav__link">Спецпредложения</a>
-                </li>
-                <li class="header__nav__item">
-                    <a href="#" class="header__nav__link">Доставка</a>
-                </li>
-                <li class="header__nav__item">
-                    <a href="#" class="header__nav__link">Контакты</a>
-                </li>
-            </ul>
-        </nav>
     </header>
     <main class="main container">
         <nav class="breadcrumbs">
@@ -83,9 +88,15 @@
                 <li class="breadcrumbs__item">
                     <a href="index.html" class="breadcrumbs__link"></a>
                 </li>
-                <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Каталог</a></li>
-                <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Инструмент</a></li>
-                <li class="breadcrumbs__item"><a class="breadcrumbs__link">Перфораторы</a></li>
+                <li class="breadcrumbs__item">
+                    <a href="#" class="breadcrumbs__link">Каталог</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="#" class="breadcrumbs__link">Инструмент</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link">Перфораторы</a>
+                </li>
             </ul>
         </nav>
         <h2 class="catalog-name">Перфораторы</h2>
@@ -116,8 +127,7 @@
                     <label class="battery__text">
                         <input type="radio" name="battery__check" value="2">Сетевые</label>
                 </section>
-                <button></button>
-                <!--Кнопка Показать -->
+                <button class="filet__button">Показать</button>
             </form>
         </aside>
         <ul class="features">
@@ -295,9 +305,9 @@
         </ul>
     </main>
     <footer class="footer container">
-        <div class="footer__logo">
-            <a href="index.html">
-                <img src="img/logo.png" alt="ТЕХНОМАРТ">
+        <div class="footer__logo logo">
+            <a href="index.html" class="logo__link">
+                <img src="img/logo.png" alt="ТЕХНОМАРТ" class="logo__image">
             </a>
         </div>
         <ul class="footer__nav">
@@ -318,8 +328,8 @@
             </li>
         </ul>
         <div class="footer__contacts">
-            <a href="tel:+7_(812)_555-05-55" class="footer__phone">+7 (812) 555-05-55</a>
-            <p class="footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <a href="tel:+78125550555" class="footer__phone">+7 (812) 555-05-55</a>
+            <span class="footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
         </div>
         <ul class="footer__categories">
             <li class="footer__categories-item">
@@ -335,8 +345,7 @@
                 <a href="#" class="footer__categories-link">Спецпредложения</a>
             </li>
         </ul>
-        <p class="footer__copyright">&copy; 2010-2017 Компания «Техномарт»‎</p>
-        <p class="footer__copyright-bottom">Все права защищены</p>
+        <p class="footer__copyright">&copy; 2010-2017 Компания «Техномарт»‎ Все права защищены</p>
         <ul class="footer__social">
             <li class="footer__social-item">
                 <a href="vk.com" class="footer__social-link"></a>
@@ -349,11 +358,11 @@
             </li>
         </ul>
         <ul class="footer__developer">
-            <li class="footer__developer-block1">
+            <li class="footer__developer-mail">
                 <p class="footer__developer-text">Обратная связь:</p>
                 <a href="mailto:mail@htmlacademy.ru" class="footer__developer-link">mail@htmlacademy.ru</a>
             </li>
-            <li class="footer__developer-block2">
+            <li class="footer__developer-address">
                 <p class="footer__developer-text">Разработано-</p>
                 <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer__developer-link">htmlacademy.ru</a>
             </li>
