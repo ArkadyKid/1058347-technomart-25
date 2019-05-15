@@ -112,6 +112,15 @@
                 <section class="filter__price">
                     <h4 class="filter__price-title filter__title">Цена:</h4>
                     <!-- Фильтр по цене -->
+                    <div class="filter__price-block">
+                        <div>
+                        </div>
+                        <div>
+                            <span>0</span>
+                            <span>-</span>
+                            <span>30000</span>
+                        </div>
+                    </div>
                 </section>
                 <section class="manufacturer">
                     <h4 class="manufacturer-title filter__title">Производители:</h4>
@@ -140,7 +149,7 @@
             <h3 class="sort__title h3-title">Сортировка</h3>
             <ul class="sort__menu">
                 <li class="sort__item">
-                    <a class="sort__link" href="#">По цене</a>
+                    <a class="sort__link sort__link--active" href="#">По цене</a>
                 </li>
                 <li class="sort__item">
                     <a class="sort__link" href="#">По типу</a>
@@ -149,12 +158,12 @@
                     <a class="sort__link" href="#">По функционалу</a>
                 </li>
             </ul>
-            <ul class="sort__button">
-                <li class="sort__button-wrapper">
-                    <a class="sort__up-button" href="#"></a>
+            <ul class="sort__menu">
+                <li class="sort__item">
+                    <a class="sort__link sort__link--active sort__link--up" href="#"></a>
                 </li>
-                <li class="sort__button-wrapper">
-                    <a class="sort__down-button" href="#"></a>
+                <li class="sort__item">
+                    <a class="sort__link sort__link--down" href="#"></a>
                 </li>
             </ul>
         </section>
@@ -333,7 +342,28 @@
                     <div class="feature-card__new-flag"></div>
                 </li>
             </ul>
+            <ul class="features__paginator paginator">
+                  <li class="paginator__item">
+                      <a class="paginator__link paginator__link--active">1</a>
+                  </li>
+                  <li class="paginator__item">
+                      <a class="paginator__link" href="#">2</a>
+                  </li>
+                  <li class="paginator__item">
+                      <a class="paginator__link" href="#">3</a>
+                  </li>
+                  <li class="paginator__item">
+                      <a class="paginator__link" href="#">Следующая</a>
+                  </li>
+            </ul>
         </section>
+        <aside class="about-features">
+            <h3 class="about-features__title">Пара слов о перфораторах</h3>
+            <p class="about-features__text">
+                Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+                Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+            </p>
+        </aside>
     </main>
     <footer class="footer container">
         <div class="footer__logo logo">
