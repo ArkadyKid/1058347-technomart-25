@@ -105,28 +105,28 @@
                 </li>
             </ul>
         </nav>
-        <section class="catalog">
-            <h2 class="catalog__title">Перфораторы</h2>
-            <aside class="catalog__filter filter">
-                <form class="filter" action="#" method="get">
+        <section class="category">
+            <h2 class="category__title">Перфораторы</h2>
+            <aside class="category__filter filter">
+                <form class="filter__form" action="#" method="get">
                     <h3 class="filter__title h3-title">Фильтр:</h3>
                     <section class="filter__price">
                         <h4 class="filter__price-title filter__title">Цена:</h4>
-                        <div class="filter__price-block">
-                            <div>
-                              <svg width="20" height="23" viewBox="0 0 20 23">
+                        <div class="filter__price-block selection-block">
+                            <div class="selection-block__select">         <!--блок имеет 2px высоту, 180px ширину с градиентным фоном и широкой серой рамкой. На котором уже позиционируются svg элементы -->
+                              <svg class="selection-block__start-select" width="20" height="23" viewBox="0 0 20 23">
                                   <path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/>
                                   <circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/>
                               </svg>
-                              <svg width="20" height="23" viewBox="0 0 20 23">
+                              <svg class="selection-block__end-select" width="20" height="23" viewBox="0 0 20 23">
                                   <path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/>
                                   <circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/>
                               </svg>
                             </div>
-                            <div>
-                                <span>0</span>
-                                <span>-</span>
-                                <span>30000</span>
+                            <div class="selection-block__value">
+                                <span class="selection-block__start-value">0</span>
+                                <span class="selection-block__to">-</span>
+                                <span class="selection-block__end-value">30000</span>
                             </div>
                         </div>
                     </section>
@@ -153,7 +153,7 @@
                     <button  class="filter__button" type="submit">Показать</button>
                 </form>
             </aside>
-            <section class="catalog__sort sort">
+            <section class="category__sort sort">
                 <h3 class="sort__title h3-title">Сортировка</h3>
                 <ul class="sort__menu">
                     <li class="sort__item">
@@ -166,7 +166,7 @@
                         <a class="sort__link" href="#">По функционалу</a>
                     </li>
                 </ul>
-                <ul class="sort__menu">
+                <ul class="sort__direction-menu sort__menu">
                     <li class="sort__item">
                         <a class="sort__link sort__link--active sort__link--up" href="#"></a>
                     </li>
@@ -175,7 +175,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="catalog__features features">
+            <section class="category__features features">
                 <h2 class="features__title visible-hidden">Перфораторы</h2>
                 <ul class="features__list">
                     <li class="features__card card">
@@ -365,7 +365,7 @@
                       </li>
                 </ul>
             </section>
-            <aside class="catalog__about about">
+            <aside class="category__about about">
                 <h3 class="about__title h3-title">Пара слов о перфораторах</h3>
                 <p class="about__text">
                     Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
