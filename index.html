@@ -10,23 +10,25 @@
     <header class="header">
         <div class="header__top">
             <div class="container">
-                <div class="header-logo logo">
-                    <a class="header-logo__link">
-                        <img class="header-logo__image" src="img/logo-technomart.svg" alt="ТЕХНОМАРТ" width="109" height="19">
+                <div class="header__logo logo">
+                    <a class="logo__link">
+                        <img class="logo__image" src="img/logo-technomart.svg" alt="ТЕХНОМАРТ" width="109" height="19">
                     </a>
                 </div>
                 <form class="header__search search" action="#">
                     <button class="search__button" name="search-button"></button>
                     <input class="search__input" type="search" name="search" placeholder="Поиск:">
                 </form>
-                <div class="bookmarks info-button">
-                    <a class="bookmarks__link" href="#">Закладки: <span class="bookmarks__value">0</span></a>
-                </div>
-                <div class="cart info-button">
-                    <a class="cart__link" href="#">Корзина: <span class="cart__value">0</span></a>
-                </div>
-                <div class="checkout">
-                    <a class="checkout__button" href="#">Оформить заказ</a>
+                <div class="header__customer-menu customer-menu">
+                    <div class="customer-menu__bookmarks customer-button">
+                        <a class="customer-menu__bookmarks-link" href="#">Закладки: <span class="bookmarks__value">0</span></a>
+                    </div>
+                    <div class="customer-menu__cart customer-button">
+                        <a class="customer-menu__cart-link" href="#">Корзина: <span class="cart__value">0</span></a>
+                    </div>
+                    <div class="customer-menu__checkout customer-button">
+                        <a class="customer-menu__checkout-link" href="#">Оформить заказ</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -36,22 +38,18 @@
                     <h1 class="header__main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
                 </section>
                 <div class="header__contacts">
-                    <span class="header__phone-wrapper">
-                        <a class="header__phone-link" href="tel:+78125550555">+7 (812) 555-05-55</a>
+                    <span class="header__contacts-wrapper">
+                        <a class="header__contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
                     </span>
-                    <span class="header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+                    <span class="header__contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
                 </div>
                 <div class="header__user-menu user-menu">
                     <ul class="user-menu__list">
-                        <li class="user-menu__login">
-                            <span class="user-menu__login-button user-menu__wrapper-button">
-                                <a class="user-menu__login-link user-button" href="#">Вход</a>
-                            </span>
+                        <li class="user-menu__login-wrapper">
+                            <a class="user-menu__login-link user-button" href="#">Вход</a>
                         </li>
-                        <li class="user-menu__registration">
-                            <span class="user-menu__registration-button user-menu__wrapper-button">
-                                <a class="user-menu__registration-link user-button" href="#">Регистрация</a>
-                            </span>
+                        <li class="user-menu__registration-wrapper">
+                            <a class="user-menu__registration-link user-button" href="#">Регистрация</a>
                         </li>
                     </ul>
                 </div>
@@ -84,7 +82,7 @@
     </header>
     <main class="main container">
         <article class="about-company">
-            <h2 class="about-company__title--hidden">Компания «Техномарт»‎</h2>
+            <h2 class="about-company__title visually-hidden">Компания «Техномарт»‎</h2>
             <!-- Скрытый заголовок -->
             <article class="description">
                 <h2 class="description__title">Компания «Техномарт»‎</h2>
@@ -104,8 +102,8 @@
                         <a class="transport-companies__link" href="#">ЖелДорЭкспедиция</a>
                     </li>
                 </ul>
-                <span class="transport-companies__button=wrapper link-button">
-                    <a class="transport-companies__button" href="#">Подробнее о компании</a>
+                <span class="transport-companies__button-wrapper link-button">
+                    <a class="link-button__button" href="#">Подробнее о компании</a>
                 </span>
             </article>
             <section class="contacts">
@@ -119,15 +117,15 @@
                     </a>
                 </p>
                 <span class="contacts__button-wraper link-button">
-                    <a class="contacts__button" href="#">Заблудились? напишите нам!</a>
+                    <a class="link-button__button" href="#">Заблудились? напишите нам!</a>
                 </span>
             </section>
         </article>
     </main>
     <footer class="footer container">
-        <div class="footer-logo logo">
-            <a class="footer-logo__link">
-                <img class="footer-logo__image" src="img/logo-technomart.svg" alt="ТЕХНОМАРТ" width="138" height="23">
+        <div class="footer__logo logo">
+            <a class="logo__link">
+                <img class="logo__image" src="img/logo-technomart.svg" alt="ТЕХНОМАРТ" width="138" height="23">
             </a>
         </div>
         <ul class="footer__nav">
@@ -148,8 +146,8 @@
             </li>
         </ul>
         <div class="footer__contacts">
-            <a class="header__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-            <span class="footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+            <a class="footer__contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            <span class="footer__contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
         </div>
         <ul class="footer__categories">
             <li class="footer__categories-item">
