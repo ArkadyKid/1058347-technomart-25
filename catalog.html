@@ -16,18 +16,18 @@
                     </a>
                 </div>
                 <form class="header__search search" action="#">
-                    <button class="search__button" type="submit"></button>
+                    <button class="search__button" type="submit" aria-label="поиск"></button>
                     <input class="search__input" type="search" name="search" placeholder="Поиск:">
                 </form>
                 <div class="header__customer-menu customer-menu">
-                    <div class="customer-menu__bookmarks customer-button">
-                        <a class="customer-menu__bookmarks-link" href="#">Закладки: <span class="bookmarks__value">0</span></a>
+                    <div class="customer-menu__button">
+                        <a class="customer-menu__link" href="#">Закладки: <span class="bookmarks__value">0</span></a>
                     </div>
-                    <div class="customer-menu__cart customer-button customer-button--filled">
-                        <a class="customer-menu__cart-link" href="#">Корзина: <span class="cart__value">10</span></a>
+                    <div class="customer-menu__button customer-button--filled">
+                        <a class="customer-menu__link" href="#">Корзина: <span class="cart__value">10</span></a>
                     </div>
-                    <div class="customer-menu__checkout customer-button">
-                        <a class="customer-menu__checkout-link" href="#">Оформить заказ</a>
+                    <div class="customer-menu__button">
+                        <a class="customer-menu__link" href="#">Оформить заказ</a>
                     </div>
                 </div>
             </div>
@@ -37,11 +37,11 @@
                 <section class="header__description">
                     <h1 class="header__main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
                 </section>
-                <div class="header__contacts">
-                    <span class="header__contacts-wrapper">
-                        <a class="header__contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+                <div class="header__contacts header-contacts">
+                    <span class="header-contacts__wrapper">
+                        <a class="header-contacts__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
                     </span>
-                    <span class="header__contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+                    <span class="header-contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
                 </div>
                 <div class="header__user-menu user-menu">
                     <ul class="user-menu__list">
@@ -49,7 +49,7 @@
                             <a class="user-menu__name-link user-button" href="#">Равшан Джамшутович</a>
                         </li>
                         <li class="user-menu__item">
-                            <a class="user-menu__quit-button user-button" href="#">Выход</a>
+                            <a class="user-menu__quit-button user-button" href="#" aria-label="выход"></a>
                         </li>
                     </ul>
                     <ul class="user-menu__interface">
@@ -64,25 +64,26 @@
             </div>
             <nav class="header__nav">
                 <ul class="header__nav-list">
-                    <li class="header__nav-item">
-                        <a class="header__nav-link" href="index.html">Главная</a>
+                    <li class="nav__item">
+                        <a class="nav__link" href="index.html">Главная</a>
                     </li>
-                    <li class="header__nav-item">
-                        <a class="header__nav-link" href="#">Компания</a>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Компания</a>
                     </li>
-                    <li class="header__nav-item">
-                        <a class="header__nav-link">Каталог</a>
+                    <li class="nav__item">
+                        <a class="nav__link">Каталог</a>
                     </li>
-                    <li class="header__nav-item">
-                        <a class="header__nav-link" href="#">Новости</a></li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Новости</a>
+                    </li>
                     <li class="header__nav__item">
-                        <a class="header__nav-link" href="#">Спецпредложения</a>
+                        <a class="nav__link" href="#">Спецпредложения</a>
                     </li>
-                    <li class="header__nav-item">
-                        <a class="header__nav-link" href="#">Доставка</a>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Доставка</a>
                     </li>
-                    <li class="header__nav-item">
-                        <a class="header__nav-link" href="#">Контакты</a>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -92,7 +93,7 @@
         <nav class="breadcrumbs">
             <ul class="breadcrumbs__list">
                 <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="index.html"></a>
+                    <a class="breadcrumbs__link" href="index.html" aria-label="На главную"></a>
                 </li>
                 <li class="breadcrumbs__item">
                     <a class="breadcrumbs__link" href="#">Каталог</a>
@@ -110,10 +111,10 @@
                 <h2 class="category__title second-title__title">Перфораторы</h2>
             </div>
             <section class="category__filter filter">
-                <form class="filter__form" action="#" method="get">
+                <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
                     <h3 class="filter__heading">Фильтр:</h3>
-                    <section class="filter__price">
-                        <h4 class="filter__price-title filter__title">Цена:</h4>
+                    <fieldset class="filter__price fieldset">
+                        <legend class="filter__price-title filter__title">Цена:</legend>
                         <div class="filter__price-block selection-block">
                             <div class="selection-block__select">         <!--блок имеет 2px высоту, 180px ширину с градиентным фоном и широкой серой рамкой. На котором уже позиционируются svg элементы -->
                                 <div class="selection-block__wrapper">
@@ -128,27 +129,27 @@
                                 <span class="value-block">30000</span>
                             </div>
                         </div>
-                    </section>
-                    <section class="filter__manufacturer manufacturer">
-                        <h4 class="manufacturer__title filter__title">Производители:</h4>
+                    </fieldset>
+                    <fieldset class="filter__manufacturer fieldset manufacturer">
+                        <legend class="manufacturer__title filter__title">Производители:</legend>
                         <label class="manufacturer__text">
-                            <input class="manufacturer__check" type="checkbox" name="manufacturer-check" value="1" checked>Bosch</label>
+                            <input class="manufacturer__check" type="checkbox" name="bosch" checked>Bosch</label>
                         <label class="manufacturer__text">
-                            <input class="manufacturer__check" type="checkbox" name="manufacturer-check" value="2">Интерскол</label>
+                            <input class="manufacturer__check" type="checkbox" name="interscol">Интерскол</label>
                         <label class="manufacturer__text">
-                            <input class="manufacturer__check" type="checkbox" name="manufacturer-check" value="3" checked>Makita</label>
+                            <input class="manufacturer__check" type="checkbox" name="makita" checked>Makita</label>
                         <label class="manufacturer__text">
-                            <input class="manufacturer__check" type="checkbox" name="manufacturer-check" value="4">Dewalt</label>
+                            <input class="manufacturer__check" type="checkbox" name="dewalt">Dewalt</label>
                         <label class="manufacturer__text">
-                            <input class="manufacturer__check" type="checkbox" name="manufacturer-check" value="5">Hitachi</label>
-                    </section>
-                    <section class="filter__battery battery">
-                        <h4 class="battery__title filter__title">Питание:</h4>
+                            <input class="manufacturer__check" type="checkbox" name="hitachi">Hitachi</label>
+                    </fieldset>
+                    <fieldset class="filter__battery fieldset battery">
+                        <legend class="battery__title filter__title">Питание:</legend>
                         <label class="battery__item">
-                            <input class="battery__check" type="radio" name="battery-check" value="1" checked>Аккумуляторные</label>
+                            <input class="battery__check" type="radio" name="battery-check" value="battery" checked>Аккумуляторные</label>
                         <label class="battery__item">
-                            <input class="battery__check" type="radio" name="battery-check" value="2">Сетевые</label>
-                    </section>
+                            <input class="battery__check" type="radio" name="battery-check" value="highvoltage">Сетевые</label>
+                    </fieldset>
                     <button  class="filter__button" type="submit">Показать</button>
                 </form>
             </section>
@@ -167,10 +168,10 @@
                 </ul>
                 <ul class="sort__direction-menu sort__menu">
                     <li class="sort__item">
-                        <a class="sort__link sort__link--active sort__link--up" href="#"></a>
+                        <a class="sort__link sort__link--active sort__link--up" href="#" aria-label="сортировка по возрастанию"></a>
                     </li>
                     <li class="sort__item">
-                        <a class="sort__link sort__link--down" href="#"></a>
+                        <a class="sort__link sort__link--down" href="#" aria-label="сортировка по убыванию"></a>
                     </li>
                 </ul>
             </section>
@@ -182,11 +183,11 @@
                             <img class="card__img" src="img/perforator_1.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
                         </div>
                         <div class="card__buttons card__buttons--hidden">
-                            <span class="card__buy-wrapper">
-                                <a class="card__buy-button" href="#">Купить</a>
+                            <span class="card__wrapper">
+                                <a class="card__button" href="#">Купить</a>
                             </span>
-                            <span class="card__tobookmarks-wrapper">
-                                <a class="card__tobookmarks-button" href="#" >В закладки</a>
+                            <span class="card__wrapper--white">
+                                <a class="card__button--white" href="#">В закладки</a>
                             </span>
                         </div>
                         <h5 class="card__title">
@@ -203,11 +204,11 @@
                             <img class="card__img" src="img/perforator_2.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
                         </div>
                         <div class="card__buttons card__buttons--hidden">
-                            <span class="card__buy-wrapper">
-                                <a class="card__buy-button" href="#">Купить</a>
+                            <span class="card__wrapper">
+                                <a class="card__button" href="#">Купить</a>
                             </span>
-                            <span class="card__tobookmarks-wrapper">
-                                <a class="card__tobookmarks-button" href="#" >В закладки</a>
+                            <span class="card__wrapper--white">
+                                <a class="card__button" href="#">В закладки</a>
                             </span>
                         </div>
                         <h5 class="card__title">
@@ -224,11 +225,11 @@
                             <img class="card__img" src="img/perforator_3.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
                         </div>
                         <div class="card__buttons">
-                            <span class="card__buy-wrapper">
-                                <a class="card__buy-button" href="#">Купить</a>
+                            <span class="card__wrapper">
+                                <a class="card__button" href="#">Купить</a>
                             </span>
-                            <span class="card__tobookmarks-wrapper">
-                                <a class="card__tobookmarks-button" href="#">В закладки</a>
+                            <span class="card__wrapper--white">
+                                <a class="card__button--white" href="#">В закладки</a>
                             </span>
                         </div>
                         <h5 class="card__title">
@@ -245,11 +246,11 @@
                             <img class="card__img" src="img/perforator_1.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
                         </div>
                         <div class="card__buttons card__buttons--hidden">
-                            <span class="card__buy-wrapper">
-                                <a class="card__buy-button" href="#">Купить</a>
+                            <span class="card__wrapper">
+                                <a class="card__button" href="#">Купить</a>
                             </span>
-                            <span class="card__tobookmarks-wrapper">
-                                <a class="card__tobookmarks-button" href="#">В закладки</a>
+                            <span class="card__wrapper--white">
+                                <a class="card__button--white" href="#">В закладки</a>
                             </span>
                         </div>
                         <h5 class="card__title">
@@ -266,11 +267,11 @@
                             <img class="card__img" src="img/perforator_2.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
                         </div>
                         <div class="card__buttons card__buttons--hidden">
-                            <span class="card__buy-wrapper">
-                                <a class="card__buy-button" href="#">Купить</a>
+                            <span class="card__wrapper">
+                                <a class="card__button" href="#">Купить</a>
                             </span>
-                            <span class="card__tobookmarks-wrapper">
-                                <a class="card__tobookmarks-button" href="#">В закладки</a>
+                            <span class="card__wrapper--white">
+                                <a class="card__button--white" href="#">В закладки</a>
                             </span>
                         </div>
                         <h5 class="card__title">
@@ -287,11 +288,11 @@
                             <img class="card__img" src="img/perforator_3.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
                         </div>
                         <div class="card__buttons card__buttons--hidden">
-                            <span class="card__buy-wrapper">
-                                <a class="card__buy-button" href="#">Купить</a>
+                            <span class="card__wrapper">
+                                <a class="card__button" href="#">Купить</a>
                             </span>
-                            <span class="card__tobookmarks-wrapper">
-                                <a class="card__tobookmarks-button" href="#">В закладки</a>
+                            <span class="card__wrapper--white">
+                                <a class="card__button--white" href="#">В закладки</a>
                             </span>
                         </div>
                         <h5 class="card__title">
@@ -308,11 +309,11 @@
                             <img class="card__img" src="img/perforator_1.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
                         </div>
                         <div class="card__buttons card__buttons--hidden">
-                            <span class="card__buy-wrapper">
-                                <a class="card__buy-button" href="#">Купить</a>
+                            <span class="card__wrapper">
+                                <a class="card__button" href="#">Купить</a>
                             </span>
-                            <span class="card__tobookmarks-wrapper">
-                                <a class="card__tobookmarks-button" href="#">В закладки</a>
+                            <span class="card__wrapper--white">
+                                <a class="card__button--white" href="#">В закладки</a>
                             </span>
                         </div>
                         <h5 class="card__title">
@@ -329,11 +330,11 @@
                             <img class="card__img" src="img/perforator_2.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
                         </div>
                         <div class="card__buttons card__buttons--hidden">
-                            <span class="card__buy-wrapper">
-                                <a class="card__buy-button" href="#">Купить</a>
+                            <span class="card__wrapper">
+                                <a class="card__button" href="#">Купить</a>
                             </span>
-                            <span class="card__tobookmarks-wrapper">
-                                <a class="card__tobookmarks-button" href="">В закладки</a>
+                            <span class="card__wrapper--white">
+                                <a class="card__button--white" href="#">В закладки</a>
                             </span>
                         </div>
                         <h5 class="card__title">
@@ -350,11 +351,11 @@
                             <img class="card__img" src="img/perforator_3.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
                         </div>
                         <div class="card__buttons card__buttons--hidden">
-                            <span class="card__buy-wrapper">
-                                <a class="card__buy-button" href="#">Купить</a>
+                            <span class="card__wrapper">
+                                <a class="card__button" href="#">Купить</a>
                             </span>
-                            <span class="card__tobookmarks-wrapper">
-                                <a class="card__tobookmarks-button" href="#">В закладки</a>
+                            <span class="card__wrapper--white">
+                                <a class="card__button--white" href="#">В закладки</a>
                             </span>
                         </div>
                         <h5 class="card__title">
@@ -415,46 +416,46 @@
                     <a class="footer__nav-link" href="#">Контакты</a>
                 </li>
             </ul>
-            <div class="footer__contacts">
-                <a class="footer__contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-                <span class="footer__contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+            <div class="footer__contacts footer-contacts">
+                <a class="footer-contacts__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+                <span class="footer-contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
             </div>
-            <ul class="footer__categories">
-                <li class="footer__categories-item">
-                    <a class="footer__categories-link" href="#">Материалы</a>
+            <ul class="footer__categories footer-categories">
+                <li class="footer-categories__item">
+                    <a class="footer-categories__link" href="#">Материалы</a>
                 </li>
-                <li class="footer__categories-item">
-                    <a class="footer__categories-link" href="#">Техника</a>
+                <li class="footer-categories__item">
+                    <a class="footer-categories__link" href="#">Техника</a>
                 </li>
-                <li class="footer__categories-item">
-                    <a class="footer__categories-link" href="#">Инструмент</a>
+                <li class="footer-categories__item">
+                    <a class="footer-categories__link" href="#">Инструмент</a>
                 </li>
-                <li class="footer__categories-item">
-                    <a class="footer__categories-link" href="#">Спецпредложения</a>
+                <li class="footer-categories__item">
+                    <a class="footer-categories__link" href="#">Спецпредложения</a>
                 </li>
             </ul>
         </div>
         <div class="footer__bottom-block">
             <p class="footer__copyright">&copy; 2010-2017 Компания «Техномарт»‎ Все права защищены</p>
-            <ul class="footer__social">
-                <li class="footer__social-item">
-                    <a class="footer__social-link" href="vk.com"></a>
+            <ul class="footer__social social">
+                <li class="social__item">
+                    <a class="social__link" href="vk.com" aria-label="Перейти на страницу группы вконтакте"></a>
                 </li>
-                <li class="footer__social-item">
-                    <a class="footer__social-link" href="facebook.com"></a>
+                <li class="social__item">
+                    <a class="social__link" href="facebook.com" aria-label="Перейти на страницу группы facebook"></a>
                 </li>
-                <li class="footer__social-item">
-                    <a class="footer__social-link" href="instagram.com"></a>
+                <li class="social__item">
+                    <a class="social__link" href="instagram.com" aria-label="Перейти на страницу группы instagram"></a>
                 </li>
             </ul>
-            <ul class="footer__developer">
-                <li class="footer__developer-mail">
-                    <p class="footer__developer-text">Обратная связь:</p>
-                    <a class="footer__developer-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <ul class="footer__developer developer">
+                <li class="developer__mail">
+                    <p class="developer__text">Обратная связь:</p>
+                    <a class="developer__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                 </li>
-                <li class="footer__developer-address">
-                    <p class="footer__developer-text">Разработано-</p>
-                    <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+                <li class="developer__address">
+                    <p class="developer__text">Разработано-</p>
+                    <a class="developer__link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
                 </li>
             </ul>
         </div>
