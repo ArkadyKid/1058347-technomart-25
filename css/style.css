@@ -1,0 +1,336 @@
+@font-face {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url(../fonts/cuprum.woff2) format("woff2"),
+    url(../fonts/cuprum.woff) format("woff");
+}
+@font-face {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    url(../fonts/cuprumbold.woff2) format("woff2"),
+    url(../fonts/cuprumbold.woff) format("woff");
+}
+@font-face {
+  font-family: "Cuprum";
+  font-style: italic;
+  font-weight: 700;
+  src:
+    url(../fonts/cuprumbolditalic.woff2) format("woff2"),
+    url(../fonts/cuprumbolditalic.woff) format("woff");
+}
+@font-face {
+  font-family: "Cuprum";
+  font-style: italic;
+  font-weight: 400;
+  src:
+    url(../fonts/cuprumitalic.woff2) format("woff2"),
+    url(../fonts/cuprumitalic.woff) format("woff");
+}
+@font-face {
+  font-family: "PTSans";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url(../fonts/ptsans.woff2) format("woff2"),
+    url(../fonts/ptsans.woff) format("woff");
+}
+@font-face {
+  font-family: "PTSans";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    url(../fonts/ptsansbold.woff2) format("woff2"),
+    url(../fonts/ptsansbold.woff) format("woff");
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Cuprum", "PTSans", sans-serif;
+  font-size: 13px;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.header {
+  height: 320px;
+  background-color: #f4f7f9;
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+.header__top {
+  height: 42px;
+  margin: 0;
+  background: #293449;
+}
+.header__top-container {
+  display: flex;
+  justify-content: space-between;
+  height: inherit;
+}
+.logo {
+  display: flex;
+  width: 220px;
+  background: #ee3643;
+  box-shadow: inset 0 -5px 0 rgba(181, 41, 51, 0.76);
+}
+.header__logo {
+  height: 47px;
+}
+.logo__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: inherit;
+  width: inherit;
+}
+.logo:hover {
+  background: #ca2c37;
+}
+.logo:active {
+  background: #ba2732;
+}
+.search {
+  display: flex;
+  width: 100%;
+  height: inherit;
+  margin-right: auto;
+}
+.search:hover {
+  background: #212a3a;
+}
+.search__button {
+  width: 48px;
+  height: inherit;
+  padding-left: 12px;
+  border: none;
+  background: #293449;
+  opacity: 0.3;
+  cursor: pointer;
+}
+.search__button:hover {
+  opacity: 1;
+}
+.search__input {
+  width: 100%;
+  height: 42px;
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 1.06;
+  background: inherit;
+  border: none;
+}
+.search__input:focus {
+  color: #000000;
+  background: #ffffff;
+}
+.search__input::placeholder {
+  padding-left: 3px;
+  color: #ffffff;
+  font-size: 17px;
+}
+.customer-menu {
+  display: flex;
+}
+.customer-menu__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+  width: 150px;
+}
+.customer-menu__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+  width: inherit;
+  padding-right: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Cuprum;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.06;
+  letter-spacing: normal;
+  text-align: left;
+}
+.customer-menu__link:active {
+  background: #161d29;
+  color: rgba(255, 255, 255, 0.6);
+}
+.customer-menu__value {
+  padding-left: 3px;
+}
+.customer-menu__img {
+  padding-right: 14px;
+  opacity: 0.3;
+}
+.customer-menu__img:hover {
+  opacity: 1;
+}
+.customer-menu__img:active {
+  opacity: 0.5;
+}
+.customer-menu__link--green {
+  padding-left: 11px;
+  background: #63a63e;
+}
+.customer-menu__link--green:hover {
+  background: #5fbb2d;
+}
+.customer-menu__link--green:active {
+  background: #518534;
+  color: rgba(255, 255, 255, 0.5);
+}
+.customer-menu__button--red {
+  background: #ee3643;
+}
+.customer-menu__button--red:hover {
+  background: #f84a56;
+}
+.customer-menu__link--red:active {
+  background: #c62531;
+}
+.header__middle {
+  display: flex;
+  height: 145px;
+  align-items: center;
+  justify-content: space-around;
+}
+.header__main-title {
+    width: 196px;
+    height: 60px;
+    font-family: Cuprum;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ee3643;
+}
+.header-contacts {
+  display: flex;
+  flex-direction: column;
+}
+.header-contacts__wrapper {
+    width: 270px;
+    height: 45px;
+    border: solid 3px #ffffff;
+}
+.header-contacts__phone {
+    width: 144px;
+    height: 21px;
+    font-family: Cuprum;
+    font-size: 21px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ee3643;
+}
+.header-contacts__address {
+    width: 250px;
+    height: 13px;
+    font-family: Cuprum;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: #32425c;
+}
+.user-menu__list {
+    display: flex;
+    list-style: none;
+}
+
+
+
+
+
+
+
+.nav {
+  background: #293449;
+  color: white;
+}
+.nav__link {
+  width: 52px;
+  height: 12px;
+  font-family: Cuprum;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-decoration: none;
+  text-align: left;
+  color: #ffffff;
+}
+.nav__list {
+  display: flex;
+  height: 60px;
+  padding: 0;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+
+
+.footer__logo {
+  height: 68px;
+}
+.footer {
+  background: #32425c;
+  color: white;
+}
+.footer__top {
+  height: 193px;
+}
+.footer__bottom {
+  height: 107px;
+  background: #293449;
+}
+.relative {
+  position: relative;
+}
+.popup {
+  width: 940px;
+  height: 446px;
+}
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.popup__map {
+  width: 940px;
+  height: 446px;
+}

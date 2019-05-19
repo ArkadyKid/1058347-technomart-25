@@ -11,50 +11,57 @@
 <body>
     <header class="header">
         <div class="header__top">
-            <div class="container">
+            <div class="header__top-container container">
                 <div class="header__logo logo">
                     <a class="logo__link">
                         <img class="logo__image" src="img/logo-technomart.svg" alt="ТЕХНОМАРТ" width="109" height="19">
                     </a>
                 </div>
                 <form class="header__search search" action="#">
-                    <button class="search__button" type="submit" aria-label="поиск"></button>
+                    <button class="search__button" type="submit">
+                        <img class="search__button-img" src="img/icon-search.svg" alt="поиск">
+                    </button>
                     <input class="search__input" type="search" name="search" placeholder="Поиск:">
                 </form>
                 <div class="header__customer-menu customer-menu">
                     <div class="customer-menu__button">
-                        <a class="customer-menu__link" href="#">Закладки: <span class="bookmarks__value">0</span></a>
+                        <a class="customer-menu__link" href="#">
+                            <img class="customer-menu__img" src="img/icon-bookmark.svg" alt="Закладки" width="14" height="16">
+                            Закладки:
+                            <span class="customer-menu__value">0</span>
+                        </a>
                     </div>
                     <div class="customer-menu__button">
-                        <a class="customer-menu__link" href="#">Корзина: <span class="cart__value">0</span></a>
+                        <a class="customer-menu__link" href="#">
+                            <img class="customer-menu__img" src="img/icon-cart.svg" alt="Корзина" width="15" height="15">
+                            Корзина:
+                            <span class="customer-menu__value">0</span>
+
+                        </a>
                     </div>
-                    <div class="customer-menu__button">
-                        <a class="customer-menu__link" href="#">Оформить заказ</a>
+                    <div class="customer-menu__button customer-menu__button--green">
+                        <a class="customer-menu__link customer-menu__link--green" href="#">Оформить заказ</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="header__middle">
-                <section class="header__description">
-                    <h1 class="header__main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-                </section>
+                <h1 class="header__main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
                 <div class="header__contacts header-contacts">
                     <span class="header-contacts__wrapper">
                         <a class="header-contacts__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
                     </span>
                     <span class="header-contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
                 </div>
-                <div class="header__user-menu user-menu">
-                    <ul class="user-menu__list">
-                        <li class="user-menu__item">
-                            <a class="user-menu__login-link user-button" href="#">Вход</a>
-                        </li>
-                        <li class="user-menu__item">
-                            <a class="user-menu__registration-link user-button" href="#">Регистрация</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="user-menu__list">
+                    <li class="user-menu__item">
+                        <a class="user-menu__login-link user-button" href="#">Вход</a>
+                    </li>
+                    <li class="user-menu__item">
+                        <a class="user-menu__registration-link user-button" href="#">Регистрация</a>
+                    </li>
+                </ul>
             </div>
             <nav class="header__nav nav">
                 <ul class="nav__list">
@@ -70,7 +77,7 @@
                     <li class="nav__item">
                         <a class="nav__link" href="#">Новости</a>
                     </li>
-                    <li class="header__nav__item">
+                    <li class="nav__item">
                         <a class="nav__link" href="#">Спецпредложения</a>
                     </li>
                     <li class="nav__item">
