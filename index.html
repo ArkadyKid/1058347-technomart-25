@@ -17,11 +17,11 @@
                         <img class="logo__image" src="img/logo-technomart.svg" alt="ТЕХНОМАРТ" width="109" height="19">
                     </a>
                 </div>
-                <form class="header__search search" action="#">
+                <form class="header__search search" action="https://echo.htmlacademy.ru" method="get">
+                    <input class="search__input" type="search" name="search" placeholder="Поиск:">
                     <button class="search__button" type="submit">
                         <img class="search__button-img" src="img/icon-search.svg" alt="поиск">
                     </button>
-                    <input class="search__input" type="search" name="search" placeholder="Поиск:">
                 </form>
                 <div class="header__customer-menu customer-menu">
                     <div class="customer-menu__button">
@@ -50,18 +50,26 @@
                 <h1 class="header__main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
                 <div class="header__contacts header-contacts">
                     <span class="header-contacts__wrapper">
-                        <a class="header-contacts__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+                        <a class="header-contacts__phone" href="tel:+78125550555">
+                            <img class="header-contacts__phone-image" src="img/icon-phone.svg" alt="телефон">
+                            +7 (812) 555-05-55
+                        </a>
                     </span>
-                    <span class="header-contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+                    <address class="header-contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
                 </div>
-                <ul class="user-menu__list">
-                    <li class="user-menu__item">
-                        <a class="user-menu__login-link user-button" href="#">Вход</a>
-                    </li>
-                    <li class="user-menu__item">
-                        <a class="user-menu__registration-link user-button" href="#">Регистрация</a>
-                    </li>
-                </ul>
+                <div class="header__user-block">
+                    <ul class="header__user-menu user-menu">
+                        <li class="user-menu__item login__block">
+                            <a class="login__block-link user-button" href="#">
+                                <img class="user-button__image" src="img/icon-login.svg" alt="вход">
+                                Войти
+                            </a>
+                        </li>
+                        <li class="user-menu__item registration__block">
+                            <a class="registration__block-link user-button" href="#">Регистрация</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <nav class="header__nav nav">
                 <ul class="nav__list">
@@ -425,7 +433,7 @@
             </ul>
             <div class="footer__contacts footer-contacts">
                 <a class="footer-contacts__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-                <span class="footer-contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+                <address class="footer-contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
             </div>
             <ul class="footer__categories footer-categories">
                 <li class="footer-categories__item">
