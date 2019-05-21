@@ -98,45 +98,45 @@
             </nav>
         </div>
     </header>
-    <main class="main container">
-        <section class="promo">
+    <main class="main">
+        <section class="main__promo promo container">
             <h2 class="promo__title visually-hidden">Преимущества</h2>
             <ul class="promo__menu">
                 <li class="promo__item promo__item--orange">
                     <span class="promo__name">Материалы</span>
-                    <div class="promo__wrapper">
-                        <img class="promo__image" src="img/icon-1.svg" alt="Материалы" width="44" height="65">
-                    </div>
-                    <a class="promo__link" href="#">На любой вкус</a>
+                    <img class="promo__image" src="img/icon-1.svg" alt="Материалы" width="44" height="65">
+                    <span class="promo__wrapper promo__wrapper--orange">
+                        <a class="promo__link" href="#">На любой вкус</a>
+                    </span>
                     <div class="promo__new-flag new-flag"></div>
                 </li>
                 <li class="promo__item promo__item--blue">
                     <span class="promo__name">Инструмент</span>
-                    <div class="promo__wrapper">
-                        <img class="promo__image" src="img/icon-2.svg" alt="Инструмент" width="75" height="61">
-                    </div>
-                    <a class="promo__link" href="#">На все случаи</a>
+                    <img class="promo__image" src="img/icon-2.svg" alt="Инструмент" width="75" height="61">
+                    <span class="promo__wrapper promo__wrapper--blue">
+                      <a class="promo__link" href="#">На все случаи жизни</a>
+                    </span>
                 </li>
                 <li class="promo__item promo__item--plum">
                     <span class="promo__name">Техника</span>
-                    <div class="promo__wrapper">
-                        <img class="promo__image" src="img/icon-3.svg" alt="Техника" width="78" height="62">
-                    </div>
-                    <a class="promo__link" href="#">Для стройки</a>
+                    <img class="promo__image" src="img/icon-3.svg" alt="Техника" width="78" height="62">
+                    <span class="promo__wrapper promo__wrapper--plum">
+                      <a class="promo__link" href="#">Для стройки</a>
+                    </span>
                 </li>
                 <li class="promo__item promo__item--feijoa">
                     <span class="promo__name">Скидка 50%</span>
-                    <div class="promo__wrapper">
-                        <img class="promo__image" src="img/icon-4.svg" alt="Для стройки" width="59" height="72">
-                    </div>
-                    <a class="promo__link" href="#">на 350 товаров</a>
+                    <img class="promo__image" src="img/icon-4.svg" alt="Для стройки" width="59" height="72">
+                    <span class="promo__wrapper promo__wrapper--feijoa">
+                      <a class="promo__link" href="#">На 350 товаров</a>
+                    </span>
                 </li>
                 <li class="promo__item promo__item--orange">
                     <span class="promo__name">Доставка</span>
-                    <div class="promo__wrapper">
-                        <img class="promo__image" src="img/icon-5.svg" alt="Доставка" width="78" height="63">
-                    </div>
-                    <a class="promo__link" href="#">Бесплатно</a>
+                    <img class="promo__image" src="img/icon-5.svg" alt="Доставка" width="78" height="63">
+                    <span class="promo__wrapper promo__wrapper--orange">
+                      <a class="promo__link" href="#">Бесплатно</a>
+                    </span>
                 </li>
             </ul>
             <ul class="promo__slider slider">
@@ -180,13 +180,13 @@
                 </li>
             </ul>
         </section>
-        <section class="popular">
-            <div class="popular__wrap second-title">
-                <h2 class="popular__title second-title__title">Популярные товары</h2>
+        <section class="popular container">
+            <div class="popular__wrapper">
+                <h2 class="popular__title second-title">Популярные товары</h2>
+                <span class="popular__button-wrapper link-button">
+                    <a class="link-button__button" href="#">Все популярные товары</a>
+                </span>
             </div>
-            <span class="popular__wraper link-button">
-                <a class="link-button__button" href="#">Все популярные товары</a>
-            </span>
             <ul class="popular__list">
                 <li class="popular__feature card">
                     <div class="card__image-wrapper">
@@ -274,14 +274,14 @@
                 </li>
             </ul>
         </section>
-        <section class="fabricator">
-            <div class="fabricator__wrapper second-title">
-                <h2 class="fabricator__title second-title__title">Популярные производители</h2>
+        <section class="main__fabricator fabricator container">
+            <div class="fabricator__wrapper">
+                <h2 class="fabricator__title second-title">Популярные производители</h2>
+                <span class="fabricator__button-wrapper link-button">
+                    <a class="link-button__button" href="#">Все производители</a>
+                </span>
             </div>
-            <span class="fabricator__button-wrapper link-button">
-                <a class="link-button__button" href="#">Все производители</a>
-            </span>
-            <ul class="fabricator__menu">
+            <ul class="fabricator__list">
                 <li class="fabricator__item fabricator-item">
                     <a class="fabricator-item__link" href="https://www.bosch.ru/">
                         <img class="fabricator-item__image" src="img/bosch.png" alt="Bosch" width="126" height="37">
@@ -325,66 +325,57 @@
             </ul>
         </section>
         <section class="services">
-            <div class="services__wrap second-title">
-                <h2 class="services__title second-title__title">Сервисы</h2>
+            <div class="services__container container">
+                <h2 class="services__title second-title">Сервисы</h2>
+                <p class="services__text">
+                    Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+                </p>
+                <div class="services__slider services-slider">
+                    <ul class="services-slider__list">
+                        <li class="services-slider__item">
+                            <span class="services-slider__wrapper services-slider__wrapper--delivery" tabindex="0">Доставка</span>
+                            <section class="services-slider__block-delivery">
+                                <h3 class="services-slider__title">Доставка</h3>
+                                <p class="services-slider__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                            </section>
+                        </li>
+                        <li class="services-slider__item">
+                            <span class="services-slider__wrapper services-slider__wrapper--warranty" tabindex="0">Гарантия</span>
+                            <section class="services-slider__block-warranty">
+                                <h3 class="services-slider__title">Гарантия</h3>
+                                <p class="services-slider__text">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+                            </section>
+                        </li>
+                        <li class="services-slider__item">
+                            <span class="services-slider__wrapper services-slider__wrapper--credit" tabindex="0">Кредит</span>
+                            <section class="services-slider__block-credit">
+                                <h3 class="services-slider__title">Кредит</h3>
+                                <p class="services-slider__text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+                            </section>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <p class="services__text">
-                Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-            </p>
-            <ul class="services__slider services-slider">
-                <li class="services-slider__item">
-                    <a class="services-slider__link" href="#">Доставка</a>
-                    <div class="services-slider__wrapper">
-                        <h3 class="services-slider__title">Доставка</h3>
-                        <p class="services-slider__text text">
-                            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
-                        </p>
-                    </div>
-                </li>
-                <li class="services-slider__item">
-                    <a class="services-slider__link" href="#">Гарантия</a>
-                    <div class="services-slider__wrapper">
-                        <h3 class="services-slider__title">Гарантия</h3>
-                        <p class="services-slider__text text">
-                            Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
-                        </p>
-                    </div>
-                </li>
-                <li class="services-slider__item">
-                    <a class="services-slider__link" href="#">Кредит</a>
-                    <div class="services-slider__wrapper">
-                        <h3 class="services-slider__title">Кредит</h3>
-                        <p class="services-slider__text text">
-                            Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
-                        </p>
-                        <span class="services-slider__button-wrap link-button">
-                            <a class="services-slider__button link-button__button" href="">Отправить заявку</a>
-                        </span>
-                    </div>
-                </li>
-            </ul>
         </section>
-        <article class="about-company">
+        <article class="about-company container">
             <h2 class="about-company__title visually-hidden">Компания «Техномарт»‎</h2>
             <article class="description">
-                <div class="description__wrap second-title">
-                    <h2 class="description__title second-title__title">Компания «Техномарт»‎</h2>
-                </div>
-                <p class="description__text text">
+                <h2 class="description__title second-title">Компания «Техномарт»‎</h2>
+                <p class="description__text">
                     Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
                 </p>
-                <p class="description__text description__text--bottom text">
+                <p class="description__text description__text--bottom">
                     Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:
                 </p>
                 <ul class="transport-companies">
                     <li class="transport-companies__item">
-                        <a class="transport-companies__link" href="#">Деловые линии</a>
+                        <a class="transport-companies__link" href="https://www.dellin.ru/">Деловые линии</a>
                     </li>
                     <li class="transport-companies__item">
-                        <a class="transport-companies__link" href="#">Автотрейдинг</a>
+                        <a class="transport-companies__link" href="http://www.autotrading.ru/">Автотрейдинг</a>
                     </li>
                     <li class="transport-companies__item">
-                        <a class="transport-companies__link" href="#">ЖелДорЭкспедиция</a>
+                        <a class="transport-companies__link" href="https://www.jde.ru/">ЖелДорЭкспедиция</a>
                     </li>
                 </ul>
                 <span class="transport-companies__button-wrapper link-button">
@@ -392,10 +383,8 @@
                 </span>
             </article>
             <section class="contacts">
-                <div class="contacts__wrap second-title">
-                    <h2 class="contacts__title second-title__title">Контакты</h2>
-                </div>
-                <p class="contacts__text text">Вы можете забрать товар сами,<br>
+                <h2 class="contacts__title second-title">Контакты</h2>
+                <p class="contacts__text">Вы можете забрать товар сами,<br>
                     заехав в наш офис:
                 </p>
                 <p class="contacts__map map">
@@ -411,68 +400,72 @@
     </main>
     <footer class="footer">
         <div class="footer__top container">
-            <div class="footer__logo logo">
-                <a class="logo__link">
-                    <img class="logo__image" src="img/logo-technomart.svg" alt="ТЕХНОМАРТ" width="138" height="23">
-                </a>
+            <div class="footer__top-block">
+                <div class="footer__logo logo">
+                    <a class="logo__link">
+                        <img class="logo__image" src="img/logo-technomart.svg" alt="ТЕХНОМАРТ" width="138" height="23">
+                    </a>
+                </div>
+                <ul class="footer__nav footer-nav">
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Компания</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Новости</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="catalog.html">Каталог</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Доставка</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Контакты</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="footer__nav footer-nav">
-                <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">Компания</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">Новости</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="catalog.html">Каталог</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">Доставка</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">Контакты</a>
-                </li>
-            </ul>
-            <div class="footer__contacts">
-                <a class="footer-contacts__phone footer-contact" href="tel:+78125550555">+7 (812) 555-05-55</a>
-                <address class="footer-contacts__address footer-contact">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+            <div class="footer__middle">
+                <div class="footer-contacts">
+                    <a class="footer-contacts__phone footer-contact" href="tel:+78125550555">+7 (812) 555-05-55</a>
+                    <address class="footer-contacts__address footer-contact">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+                </div>
+                <ul class="footer__categories footer-nav">
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link footer-nav__link--yellow" href="#">Материалы</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link footer-nav__link--yellow" href="#">Техника</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link footer-nav__link--yellow" href="#">Инструмент</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link footer-nav__link--yellow" href="#">Спецпредложения</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="footer__categories footer-nav">
-                <li class="footer-nav__item">
-                    <a class="footer-nav__link footer-nav__link--yellow" href="#">Материалы</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a class="footer-nav__link footer-nav__link--yellow" href="#">Техника</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a class="footer-nav__link footer-nav__link--yellow" href="#">Инструмент</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a class="footer-nav__link footer-nav__link--yellow" href="#">Спецпредложения</a>
-                </li>
-            </ul>
         </div>
         <div class="footer__bottom container">
             <p class="footer__copyright">&copy; 2010-2017 Компания «Техномарт»‎ Все права защищены</p>
             <ul class="footer__social social">
                 <li class="social__item">
-                    <a class="social__link" href="vk.com" aria-label="Перейти на страницу группы вконтакте"></a>
+                    <a class="social__link social__link--vk" href="http://vk.com" aria-label="Перейти на страницу группы вконтакте"></a>
                 </li>
                 <li class="social__item">
-                    <a class="social__link" href="facebook.com" aria-label="Перейти на страницу группы facebook"></a>
+                    <a class="social__link social__link--facebook" href="http://facebook.com" aria-label="Перейти на страницу группы facebook"></a>
                 </li>
                 <li class="social__item">
-                    <a class="social__link" href="instagram.com" aria-label="Перейти на страницу группы instagram"></a>
+                    <a class="social__link social__link--instagram" href="http://instagram.com" aria-label="Перейти на страницу группы instagram"></a>
                 </li>
             </ul>
             <ul class="footer__developer developer footer-nav">
-                <li class="developer__mail">
+                <li class="developer__item">
                     <p class="developer__text">Обратная связь:</p>
-                    <a class="developer__text developer__text--brown" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                    <a class="developer__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                 </li>
-                <li class="developer__address">
+                <li class="developer__item">
                     <p class="developer__text">Разработано-</p>
-                    <a class="developer__text developer__text--brown" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+                    <a class="developer__link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
                 </li>
             </ul>
         </div>
@@ -501,7 +494,7 @@
                     <textarea class="modal__textarea" id="input-text" placeholder="В свободной форме" name="text"></textarea>
                 </label>
             </fieldset>
-            <button class="modal__button link-button" type="submit">Отправить</button>
+            <button class="modal__button link-button__button" type="submit">Отправить</button>
         </form>
     </div>
 </body>
