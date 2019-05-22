@@ -139,9 +139,19 @@
                     </span>
                 </li>
             </ul>
-            <ul class="promo__slider slider">
-                <li class="slider__item">
-                    <h4 class="slider__title">Дрели</h4>
+            <section class="promo__slider slider">
+                <label class="slider__paginator slider__paginator--left" for="to-left">
+                    <img class="slider__paginator-image" src="img/icon-left.svg" alt="налево">
+                </label>
+                <label class="slider__paginator slider__paginator--right" for="to-right">
+                    <img class="slider__paginator-image" src="img/icon-right.svg" alt="направо">
+                </label>
+                <input class="slider__radio slider__radio--left" id="to-left" type="radio" value="first-page" name="select-page">
+                <i class="slider__paginator-wrapper slider__paginator-wrapper--left"></i>
+                <input class="slider__radio slider__radio--right" id="to-right" type="radio" value="second-page" name="select-page">
+                <i class="slider__paginator-wrapper slider__paginator-wrapper--right"></i>
+                <div class="slider__item slider__item--drill">
+                    <h4 class="slider__title slider__title--drill">Дрели</h4>
                     <span class="slider__text">Соседям на радость!</span>
                     <ul class="slider__page-button page-button">
                         <li class="page-button__item page-button__item--left">
@@ -154,16 +164,8 @@
                     <span class="slider__button-wrapper link-button">
                         <a class="link-button__button" href="catalog.html">Открыть каталог</a>
                     </span>
-                    <label class="slider__paginator slider__paginator--left" for="to-left-first">
-                      <img class="slider__paginator-image" src="img/icon-left.svg" alt="налево">
-                    </label>
-                    <label class="slider__paginator slider__paginator--right" for="to-right-first">
-                        <img class="slider__paginator-image" src="img/icon-right.svg" alt="направо">
-                    </label>
-                    <input class="slider__radio slider__radio--left" id="to-left-first" type="radio" value="first-page" name="select-page">
-                    <input class="slider__radio slider__radio--right" id="to-right-first" type="radio" value="second-page" name="select-page">
-                </li>
-                <li class="slider__item slider__item--perf">
+                </div>
+                <div class="slider__item slider__item--perf">
                     <h4 class="slider__title">Перфораторы</h4>
                     <span class="slider__text">Настоящие мужские игрушки</span>
                     <ul class="slider__page-button page-button">
@@ -177,16 +179,8 @@
                     <span class="slider__button-wrapper link-button">
                         <a class="link-button__button" href="catalog.html">Открыть каталог</a>
                     </span>
-                    <label class="slider__paginator slider__paginator--right" for="to-right">
-                        <img class="slider__paginator-image" src="img/icon-right.svg" alt="направо">
-                    </label>
-                    <label class="slider__paginator slider__paginator--left" for="to-left">
-                        <img class="slider__paginator-image" src="img/icon-left.svg" alt="налево">
-                    </label>
-                    <input class="slider__radio slider__radio--left" id="to-left" type="radio" value="first-page" name="select-page">
-                    <input class="slider__radio slider__radio--right" id="to-right" type="radio" value="second-page" name="select-page">
-                </li>
-            </ul>
+                </div>
+            </section>
         </section>
         <section class="popular container">
             <div class="popular__wrapper">

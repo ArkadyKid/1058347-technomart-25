@@ -550,10 +550,13 @@ body {
   top: 0px;
 }
 .slider {
+  position: relative;
   width: 620px;
   height: 266px;
-  margin: 0px;
-  padding: 0px;
+}
+.slider__list {
+  margin: 0;
+  padding: 0;
 }
 .slider__item {
   position: relative;
@@ -610,6 +613,7 @@ body {
 }
 .slider__paginator {
   position: absolute;
+  z-index: 1;
 
   width: 22px;
   height: 40px;
@@ -625,22 +629,51 @@ body {
   left: 25px;
 }
 .slider__radio {
+  display: none;
+}
+.slider__paginator-wrapper {
   position: absolute;
+  z-index: 1;
 
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+  background-color: #ffffff;
   cursor: pointer;
 }
-.slider__radio--right {
-  right: 292px;
+.slider__paginator-wrapper--left {
+  right: 315px;
   bottom: 33px;
 }
-.slider__radio--left {
-  right: 312px;
+.slider__paginator-wrapper--right {
+  right: 295px;
   bottom: 33px;
+}
+.slider__paginator-wrapper--left::before,
+.slider__paginator-wrapper--right::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.slider__radio--right:checked + .slider__paginator-wrapper--right::before,
+.slider__radio--left:checked + .slider__paginator-wrapper--left::before {
+  background-color: #ee3643;
 }
 .slider__item--perf {
   display: none;
 }
-
+.slider__radio--right:checked ~ .slider__item--perf {
+  display: block;
+}
+.slider__radio--right:checked ~ .slider__item--drill {
+  display: none;
+}
 .services__container {
   display: flex;
   flex-direction: column;
