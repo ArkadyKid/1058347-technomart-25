@@ -151,7 +151,7 @@ body {
   height: 42px;
   order: 2;
 
-  font-family: Cuprum;
+  font-family: "Cuprum";
   font-size: 17px;
   font-weight: 400;
   font-style: normal;
@@ -172,7 +172,7 @@ body {
 .search__input::placeholder {
   padding-left: 3px;
 
-  font-family: Cuprum;
+  font-family: "Cuprum";
   font-size: 17px;
   font-weight: 400;
   font-style: normal;
@@ -386,6 +386,7 @@ body {
   line-height: 1.13;
   letter-spacing: normal;
   text-align: left;
+  color: #32425c;
 }
 .user-menu__link:hover {
   color: #ee3643;
@@ -504,7 +505,7 @@ body {
   background-color: #8ed78f;
 }
 .promo__name {
-  font-family: Cuprum;
+  font-family: "Cuprum";
   font-size: 24px;
   font-weight: 700;
   font-style: normal;
@@ -533,7 +534,7 @@ body {
   width: inherit;
   height: inherit;
 
-  font-family: Cuprum;
+  font-family: "Cuprum";
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -555,6 +556,7 @@ body {
   padding: 0px;
 }
 .slider__item {
+  position: relative;
   width: inherit;
   height: 266px;
   list-style: none;
@@ -566,9 +568,13 @@ body {
   background-image: url("../img/slider-2.jpg");
 }
 .slider__title {
-  font-family: Cuprum;
+  position: absolute;
+  top: -24px;
+  left: 24px;
+
+  font-family: "Cuprum";
   font-size: 36px;
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
   font-stretch: normal;
   line-height: 1;
@@ -578,9 +584,13 @@ body {
   color: #ffffff;
 }
 .slider__text {
-  font-family: Cuprum;
+  position: absolute;
+  top: 63px;
+  left: 26px;
+
+  font-family: "Cuprum";
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.33;
@@ -589,11 +599,48 @@ body {
   color: #ffffff;
 }
 .slider__button-wrapper {
+  position: absolute;
+  bottom: 20px;
+  left: 27px;
+
   width: 195px;
 }
 .slider__item--hidden {
   visibility: hidden;
 }
+.slider__paginator {
+  position: absolute;
+
+  width: 22px;
+  height: 40px;
+
+  cursor: pointer;
+}
+.slider__paginator--right {
+  top: 114px;
+  right: 20px;
+}
+.slider__paginator--left {
+  top: 114px;
+  left: 25px;
+}
+.slider__radio {
+  position: absolute;
+
+  cursor: pointer;
+}
+.slider__radio--right {
+  right: 292px;
+  bottom: 33px;
+}
+.slider__radio--left {
+  right: 312px;
+  bottom: 33px;
+}
+.slider__item--perf {
+  display: none;
+}
+
 .services__container {
   display: flex;
   flex-direction: column;
@@ -621,7 +668,7 @@ body {
   align-items: center;
   height: 61px;
 
-  font-family: Cuprum;
+  font-family: "Cuprum";
   font-size: 21px;
   font-weight: 700;
   font-style: normal;
@@ -654,7 +701,7 @@ body {
   opacity: 0;
 }
 .services-slider__title {
-  font-family: Cuprum;
+  font-family: "Cuprum";
   font-size: 36px;
   font-weight: 400;
   font-style: normal;
@@ -667,7 +714,7 @@ body {
 .services-slider__text {
   width: 900px;
 
-  font-family: PTSans;
+  font-family: "PTSans";
   font-size: 13px;
   font-weight: 400;
   font-style: normal;
@@ -733,7 +780,7 @@ body {
 
   padding-right: 20px;
 
-  font-family: PTSans;
+  font-family: "PTSans";
   font-size: 13px;
   font-weight: 400;
   font-style: normal;
@@ -774,7 +821,7 @@ body {
   background-color: #f2f6f8;
 }
 .sort__title {
-  font-family: PTSans;
+  font-family: "PTSans";
   font-size: 13px;
   font-weight: 400;
   font-style: normal;
@@ -785,7 +832,7 @@ body {
   text-align: left;
 }
 .about__title {
-  font-family: Cuprum;
+  font-family: "Cuprum";
   font-size: 30px;
   font-weight: 400;
   font-style: normal;
@@ -797,7 +844,7 @@ body {
   color: #000000;
 }
 .about__text {
-  font-family: PTSans;
+  font-family: "PTSans";
   font-size: 13px;
   font-weight: 400;
   font-style: normal;
@@ -807,7 +854,7 @@ body {
   text-align: left;
 }
 .filter__title {
-  font-family: PTSans;
+  font-family: "PTSans";
   font-size: 17px;
   font-weight: 700;
   font-style: normal;
@@ -823,7 +870,7 @@ body {
 
   background-color: #f7f3ec;
 
-  font-family: PTSans;
+  font-family: "PTSans";
   font-size: 13px;
   font-weight: 400;
   font-style: normal;
@@ -839,14 +886,36 @@ body {
 }
 .fieldset {
   display: flex;
+  flex-direction: column;
   border: none;
 }
-.selection-block__select {
+.selection-block {
+  position: relative;
+
   display: flex;
-  width: 180px;
-  height: 2px;
-  margin: auto;
-  border: 39px solid #f7f3ec;
+  width: 220px;
+  height: 80px;
+  margin-bottom: 10px;
+
+  background: linear-gradient(90deg, #00ca74 145px, #d7dcde 145px);
+  border-color:#f7f3ec;
+  border-style: solid;
+  border-top-width: 39px;
+  border-bottom-width: 39px;
+  border-left-width: 21px;
+  border-right-width: 20px;
+}
+.selection-block__wrapper {
+  position: absolute;
+  top: -9px;
+
+  cursor: pointer;
+}
+.selection-block__wrapper--right {
+  right: 20px;
+}
+.selection-block__wrapper--left {
+  left: -1px;
 }
 .value-block {
   display: flex;
@@ -859,6 +928,15 @@ body {
   align-items: center;
   width: 95px;
   height: 38px;
+
+  font-family: "PTSans";
+  font-size: 17px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.06;
+  letter-spacing: normal;
+  text-align: center;
 
   background-color: #f7f3ec;
 }
@@ -908,7 +986,7 @@ body {
   border-bottom: 1px solid #b8b4ad;
 }
 .manufacturer__text {
-  font-family: PTSans;
+  font-family: "PTSans";
   font-size: 15px;
   font-weight: 400;
   font-style: normal;
@@ -919,7 +997,7 @@ body {
   text-transform: uppercase;
 }
 .battery__text {
-  font-family: PTSans;
+  font-family: "PTSans";
   font-size: 15px;
   font-weight: 400;
   font-style: normal;
@@ -933,7 +1011,7 @@ body {
   width: 140px;
   height: 38px;
 
-  font-family: PTSans;
+  font-family: "PTSans";
   font-size: 13px;
   font-weight: 400;
   font-style: normal;
@@ -964,9 +1042,9 @@ body {
   list-style: none;
 }
 .sort__link {
-  font-family: PTSans;
+  font-family: "PTSans";
   font-size: 13px;
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.38;
@@ -1087,7 +1165,7 @@ body {
 .card__name {
   display: flex;
 
-  font-family: PTSans;
+  font-family: "PTSans";
   font-size: 18px;
   font-weight: 700;
   font-style: normal;
@@ -1115,7 +1193,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  font-family: Cuprum;
+  font-family: "Cuprum";
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -1162,7 +1240,7 @@ body {
   opacity: 1;
 }
 .card__old-price {
-  font-family: PTSans;
+  font-family: "PTSans";
   font-size: 17px;
   font-weight: 700;
   font-style: normal;
@@ -1203,7 +1281,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  font-family: PTSans;
+  font-family: "PTSans";
   font-size: 17px;
   font-weight: 700;
   font-style: normal;
@@ -1251,7 +1329,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  font-family: PTSans;
+  font-family: "PTSans";
   font-size: 13px;
   font-weight: 400;
   font-style: normal;
