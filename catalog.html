@@ -134,14 +134,14 @@
                         <fieldset class="filter__price fieldset">
                             <legend class="filter__price-title filter__title">Цена:</legend>
                             <div class="filter__price-block selection-block">
-                                <div class="selection-block__select">         <!--блок имеет 2px высоту, 180px ширину с градиентным фоном и широкой серой рамкой. На котором уже позиционируются svg элементы -->
+                              <div class="selection-block__select">         <!--блок имеет 2px высоту, 180px ширину с градиентным фоном и широкой серой рамкой. На котором уже позиционируются svg элементы -->
                                     <div class="selection-block__wrapper">
                                         <img class="selection-block__image" src="img/filter-button.svg" alt="circle" width="20" height="22">
                                     </div>
                                     <div class="selection-block__wrapper">
                                         <img class="selection-block__image" src="img/filter-button.svg" alt="circle" width="20" height="22">
                                     </div>
-                                </div>
+                              </div>
                                 <div class="selection-block__value value-block">
                                     <span class="value-block__block value-block__block--after">0</span>
                                     <span class="value-block__block">30000</span>
@@ -151,27 +151,36 @@
                         <fieldset class="filter__manufacturer fieldset manufacturer">
                             <legend class="manufacturer__title filter__title">Производители:</legend>
                             <label class="manufacturer__text" for="check-bosch">
-                                <input class="manufacturer__check" id="check-bosch" type="checkbox" name="bosch" checked>Bosch
+                                <input class="manufacturer__check visually-hidden" id="check-bosch" type="checkbox" name="bosch" checked>
+                                <i class="manufacturer__wrapper"></i> Bosch
                             </label>
                             <label class="manufacturer__text" for="check-interscol">
-                                <input class="manufacturer__check" id="check-interscol" type="checkbox" name="interscol">Интерскол
+                                <input class="manufacturer__check visually-hidden" id="check-interscol" type="checkbox" name="interscol">
+                                <i class="manufacturer__wrapper"></i> Интерскол
                             </label>
                             <label class="manufacturer__text" for="check-makita">
-                                <input class="manufacturer__check" id="check-makita" type="checkbox" name="makita" checked>Makita
+                                <input class="manufacturer__check visually-hidden" id="check-makita" type="checkbox" name="makita" checked>
+                                <i class="manufacturer__wrapper"></i> Makita
                             </label>
                             <label class="manufacturer__text" for="check-dewalt">
-                                <input class="manufacturer__check" id="check-dewalt" type="checkbox" name="dewalt">Dewalt
+                                <input class="manufacturer__check visually-hidden" id="check-dewalt" type="checkbox" name="dewalt">
+                                <i class="manufacturer__wrapper"></i> Dewalt
                             </label>
                             <label class="manufacturer__text" for="check-hitachi">
-                                <input class="manufacturer__check" id="check-hitachi" type="checkbox" name="hitachi">Hitachi
+                                <input class="manufacturer__check visually-hidden" id="check-hitachi" type="checkbox" name="hitachi">
+                                <i class="manufacturer__wrapper"></i> Hitachi
                             </label>
                         </fieldset>
                         <fieldset class="filter__battery fieldset battery">
                             <legend class="battery__title filter__title">Питание:</legend>
                             <label class="battery__text" for="battery">
-                                <input class="battery__check" id="battery" type="radio" name="battery-check" value="battery" checked>Аккумуляторные</label>
+                                <input class="battery__check visually-hidden" id="battery" type="radio" name="battery-check" value="battery" checked>
+                                <i class="battery__wrapper"></i> Аккумуляторные
+                            </label>
                             <label class="battery__text" for="highvoltage">
-                                <input class="battery__check" id="highvoltage" type="radio" name="battery-check" value="highvoltage">Сетевые</label>
+                                <input class="battery__check visually-hidden" id="highvoltage" type="radio" name="battery-check" value="highvoltage">
+                                <i class="battery__wrapper"></i> Сетевые
+                            </label>
                         </fieldset>
                         <button  class="filter__button" type="submit">Показать</button>
                     </form>

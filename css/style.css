@@ -548,8 +548,51 @@ body {
 .promo__new-flag {
   top: 0px;
 }
+.slider {
+  width: 620px;
+  height: 266px;
+  margin: 0px;
+  padding: 0px;
+}
+.slider__item {
+  width: inherit;
+  height: 266px;
+  list-style: none;
+
+  background-image: url("../img/slider-1.jpg");
+  background-repeat: no-repeat;
+}
+.slider__item--perf {
+  background-image: url("../img/slider-2.jpg");
+}
+.slider__title {
+  font-family: Cuprum;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.slider__text {
+  font-family: Cuprum;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
 .slider__button-wrapper {
   width: 195px;
+}
+.slider__item--hidden {
+  visibility: hidden;
 }
 .services__container {
   display: flex;
@@ -799,9 +842,11 @@ body {
   border: none;
 }
 .selection-block__select {
-  width: 220px;
-  height: 80px;
-  background-color: #f7f3ec;
+  display: flex;
+  width: 180px;
+  height: 2px;
+  margin: auto;
+  border: 39px solid #f7f3ec;
 }
 .value-block {
   display: flex;
@@ -819,20 +864,44 @@ body {
 }
 .value-block__block--after::after {
   position: absolute;
-  content: "-";
+  content: "";
 
-  width: 10px;
-
-  font-family: PTSans;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.13;
-  letter-spacing: normal;
-  text-align: center;
-  color: #444444;
-  right: -18px;
+  width: 11px;
+  height: 1px;
+  background-color: black;
+  right: -20px;
+}
+.manufacturer__wrapper {
+  display: inline-block;
+  position: relative;
+  width: 23px;
+  height: 23px;
+}
+.battery__wrapper {
+  display: inline-block;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.manufacturer__wrapper::before,
+.battery__wrapper::before {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+.manufacturer__check + .manufacturer__wrapper::before {
+  background-image: url("../img/checkbox-off.svg");
+}
+.manufacturer__check:checked + .manufacturer__wrapper::before {
+  background-image: url("../img/checkbox-on.svg");
+}
+.battery__check + .battery__wrapper::before {
+  background-image: url("../img/radio-off.svg");
+}
+.battery__check:checked + .battery__wrapper::before {
+  background-image: url("../img/radio-on.svg");
 }
 .manufacturer {
   border-top: 1px solid #b8b4ad;
