@@ -564,10 +564,12 @@ body {
   height: 266px;
   list-style: none;
 
+  background-color: #201513;
   background-image: url("../img/slider-1.jpg");
   background-repeat: no-repeat;
 }
 .slider__item--perf {
+  background-color: #715e4d;
   background-image: url("../img/slider-2.jpg");
 }
 .slider__title {
