@@ -10,8 +10,8 @@
 
 <body>
     <header class="header">
-        <div class="header__top">
-            <div class="header__top-container container">
+      <div class="header__top-section">
+        <div class="header__top-content container">
                 <div class="header__logo logo">
                     <a class="logo__link" href="index.html">
                         <img class="logo__image" src="img/logo-technomart.svg" alt="ТЕХНОМАРТ" width="109" height="19">
@@ -31,7 +31,7 @@
                             <span class="customer-menu__value">0</span>
                         </a>
                     </div>
-                    <div class="customer-menu__button customer-menu__button--red">
+                    <div class="customer-menu__button">
                         <a class="customer-menu__link customer-menu__link--red" href="#">
                             <img class="customer-menu__img" src="img/icon-cart.svg" alt="Корзина" width="15" height="15">
                             Корзина:
@@ -39,7 +39,7 @@
 
                         </a>
                     </div>
-                    <div class="customer-menu__button customer-menu__button--green">
+                    <div class="customer-menu__button">
                         <a class="customer-menu__link customer-menu__link--green" href="#">Оформить заказ</a>
                     </div>
                 </div>
@@ -61,13 +61,13 @@
                     <ul class="header__user-menu user-menu">
                         <li class="user-menu__item name__block">
                             <a class="name__block-link user-button" href="#">
-                                <img class="name__block-image" src="img/icon-user.svg" alt="Пользователь">
+                                <img class="user-button__image" src="img/icon-user.svg" alt="Пользователь">
                                 Равшан Джамшутович
                             </a>
                         </li>
                         <li class="user-menu__item quit__block">
-                            <a class="quit__block-button user-button" href="#">
-                                <img class="quit__block-image" src="img/icon-logout.svg" alt="выход">
+                            <a class="quit__block-link user-button" href="#">
+                                <img class="user-button__image" src="img/icon-logout.svg" alt="выход">
                             </a>
                         </li>
                     </ul>
@@ -75,7 +75,7 @@
                         <li class="user-menu__info">
                             <a class="user-menu__link" href="#">Мои заказы</a>
                         </li>
-                        <li class="user-menu__info user-menu__info--before">
+                        <li class="user-menu__info">
                             <a class="user-menu__link" href="#">Личный кабинет</a>
                         </li>
                     </ul>
@@ -115,10 +115,10 @@
                     <a class="breadcrumbs__link breadcrumbs__link--img" href="index.html" aria-label="На главную"></a>
                 </li>
                 <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link breadcrumbs__link--before" href="#">Каталог</a>
+                    <a class="breadcrumbs__link" href="#">Каталог</a>
                 </li>
                 <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link breadcrumbs__link--before" href="#">Инструмент</a>
+                    <a class="breadcrumbs__link" href="#">Инструмент</a>
                 </li>
                 <li class="breadcrumbs__item">
                     <a class="breadcrumbs__link">Перфораторы</a>
@@ -142,7 +142,7 @@
                                       </div>
                                 </div>
                                 <div class="selection-block__value value-block">
-                                    <span class="value-block__block value-block__block--after">0</span>
+                                    <span class="value-block__block">0</span>
                                     <span class="value-block__block">30000</span>
                                 </div>
                         </fieldset>
@@ -150,34 +150,34 @@
                             <legend class="manufacturer__title filter__title">Производители:</legend>
                             <label class="manufacturer__text" for="check-bosch">
                                 <input class="manufacturer__check visually-hidden" id="check-bosch" type="checkbox" name="bosch" checked>
-                                <i class="manufacturer__wrapper"></i> Bosch
+                                <span class="manufacturer__wrapper">Bosch</span>
                             </label>
                             <label class="manufacturer__text" for="check-interscol">
                                 <input class="manufacturer__check visually-hidden" id="check-interscol" type="checkbox" name="interscol">
-                                <i class="manufacturer__wrapper"></i> Интерскол
+                                <span class="manufacturer__wrapper">Интерскол</span>
                             </label>
                             <label class="manufacturer__text" for="check-makita">
                                 <input class="manufacturer__check visually-hidden" id="check-makita" type="checkbox" name="makita" checked>
-                                <i class="manufacturer__wrapper"></i> Makita
+                                <span class="manufacturer__wrapper">Makita</span>
                             </label>
                             <label class="manufacturer__text" for="check-dewalt">
                                 <input class="manufacturer__check visually-hidden" id="check-dewalt" type="checkbox" name="dewalt">
-                                <i class="manufacturer__wrapper"></i> Dewalt
+                                <span class="manufacturer__wrapper">Dewalt</span>
                             </label>
                             <label class="manufacturer__text" for="check-hitachi">
                                 <input class="manufacturer__check visually-hidden" id="check-hitachi" type="checkbox" name="hitachi">
-                                <i class="manufacturer__wrapper"></i> Hitachi
+                                <span class="manufacturer__wrapper">Hitachi</span>
                             </label>
                         </fieldset>
                         <fieldset class="filter__battery fieldset battery">
                             <legend class="battery__title filter__title">Питание:</legend>
                             <label class="battery__text" for="battery">
                                 <input class="battery__check visually-hidden" id="battery" type="radio" name="battery-check" value="battery" checked>
-                                <i class="battery__wrapper"></i> Аккумуляторные
+                                <span class="battery__wrapper">Аккумуляторные</span>
                             </label>
                             <label class="battery__text" for="highvoltage">
                                 <input class="battery__check visually-hidden" id="highvoltage" type="radio" name="battery-check" value="highvoltage">
-                                <i class="battery__wrapper"></i> Сетевые
+                                <span class="battery__wrapper">Сетевые</span>
                             </label>
                         </fieldset>
                         <button  class="filter__button" type="submit">Показать</button>
@@ -188,7 +188,7 @@
                         <h3 class="sort__title">Сортировка</h3>
                         <ul class="sort__menu">
                             <li class="sort__item">
-                                <a class="sort__link sort__link--active active" href="#">По цене</a>
+                                <a class="sort__link sort__link--active" href="#">По цене</a>
                             </li>
                             <li class="sort__item">
                                 <a class="sort__link" href="#">По типу</a>
@@ -199,7 +199,7 @@
                         </ul>
                         <ul class="sort__direction-menu sort__menu">
                             <li class="sort__item">
-                                <a class="sort__link sort__link--up sort__link--up--active" href="#" aria-label="сортировка по возрастанию"></a>
+                                <a class="sort__link sort__link--up" href="#" aria-label="сортировка по возрастанию"></a>
                             </li>
                             <li class="sort__item">
                                 <a class="sort__link sort__link--down" href="#" aria-label="сортировка по убыванию"></a>
@@ -210,193 +210,211 @@
                         <h2 class="features__title visually-hidden">Перфораторы</h2>
                         <ul class="features__list">
                             <li class="features__card card">
-                                <div class="card__buttons card__buttons--hidden">
-                                    <span class="card__wrapper card__wrapper--green">
+                                <div class="card__new-flag"></div>
+                                <div class="card__buttons">
+                                    <span class="card__wrapper">
                                         <a class="card__button card__button--green" href="#">
                                             <img class="card__button-image" src="img/icon-cart.svg" alt="купить">
                                             Купить
                                         </a>
                                     </span>
-                                    <span class="card__wrapper card__wrapper--white">
+                                    <span class="card__wrapper">
                                         <a class="card__button card__button--white" href="#">В закладки</a>
                                     </span>
-                                    <div class="card__new-flag new-flag"></div>
                                 </div>
                                 <h5 class="card__title">
                                     <a class="card__name" href="#">Перфоратор BOSCH BFG 9000</a>
                                 </h5>
-                                <span class="card__old-price">32500 р.</span>
-                                <p class="card__price">
-                                    <a class="card__price-button" href="#">25500 р.</a>
-                                </p>
+                                <div class="card__price-block">
+                                    <span class="card__old-price">32500 р.</span>
+                                    <p class="card__price">
+                                        <a class="card__price-button" href="#">25500 р.</a>
+                                    </p>
+                                </div>
                             </li>
                             <li class="features__card card">
-                                <div class="card__buttons card__buttons--hidden">
-                                    <span class="card__wrapper card__wrapper--green">
+                                <div class="card__new-flag"></div>
+                                <div class="card__buttons">
+                                    <span class="card__wrapper">
                                         <a class="card__button card__button--green" href="#">
                                             <img class="card__button-image" src="img/icon-cart.svg" alt="купить">
                                             Купить
                                         </a>
                                     </span>
-                                    <span class="card__wrapper card__wrapper--white">
+                                    <span class="card__wrapper">
                                         <a class="card__button card__button--white" href="#">В закладки</a>
                                     </span>
-                                    <div class="card__new-flag new-flag"></div>
                                 </div>
                                 <h5 class="card__title">
                                     <a class="card__name" href="#">Перфоратор BOSCH BFG 9000</a>
                                 </h5>
-                                <span class="card__old-price">32500 р.</span>
-                                <p class="card__price">
-                                    <a class="card__price-button" href="#">25500 р.</a>
-                                </p>
+                                <div class="card__price-block">
+                                    <span class="card__old-price">32500 р.</span>
+                                    <p class="card__price">
+                                        <a class="card__price-button" href="#">25500 р.</a>
+                                    </p>
+                                </div>
                             </li>
                             <li class="features__card card">
-                                <div class="card__buttons card__buttons--hidden">
-                                    <span class="card__wrapper card__wrapper--green">
+                                <div class="card__new-flag"></div>
+                                <div class="card__buttons">
+                                    <span class="card__wrapper">
                                         <a class="card__button card__button--green" href="#">
                                             <img class="card__button-image" src="img/icon-cart.svg" alt="купить">
                                             Купить
                                         </a>
                                     </span>
-                                    <span class="card__wrapper card__wrapper--white">
+                                    <span class="card__wrapper">
                                         <a class="card__button card__button--white" href="#">В закладки</a>
                                     </span>
-                                    <div class="card__new-flag new-flag"></div>
                                 </div>
                                 <h5 class="card__title">
                                     <a class="card__name" href="#">Перфоратор BOSCH BFG 9000</a>
                                 </h5>
-                                <span class="card__old-price">32500 р.</span>
-                                <p class="card__price">
-                                    <a class="card__price-button" href="#">25500 р.</a>
-                                </p>
+                                <div class="card__price-block">
+                                    <span class="card__old-price">32500 р.</span>
+                                    <p class="card__price">
+                                        <a class="card__price-button" href="#">25500 р.</a>
+                                    </p>
+                                </div>
                             </li>
                             <li class="features__card card">
-                                <div class="card__buttons card__buttons--hidden">
-                                    <span class="card__wrapper card__wrapper--green">
+                                <div class="card__new-flag"></div>
+                                <div class="card__buttons">
+                                    <span class="card__wrapper">
                                         <a class="card__button card__button--green" href="#">
                                             <img class="card__button-image" src="img/icon-cart.svg" alt="купить">
                                             Купить
                                         </a>
                                     </span>
-                                    <span class="card__wrapper card__wrapper--white">
+                                    <span class="card__wrapper">
                                         <a class="card__button card__button--white" href="#">В закладки</a>
                                     </span>
-                                    <div class="card__new-flag new-flag"></div>
                                 </div>
                                 <h5 class="card__title">
                                     <a class="card__name" href="#">Перфоратор BOSCH BFG 9000</a>
                                 </h5>
-                                <span class="card__old-price">32500 р.</span>
-                                <p class="card__price">
-                                    <a class="card__price-button" href="#">25500 р.</a>
-                                </p>
+                                <div class="card__price-block">
+                                    <span class="card__old-price">32500 р.</span>
+                                    <p class="card__price">
+                                        <a class="card__price-button" href="#">25500 р.</a>
+                                    </p>
+                                </div>
                             </li>
                             <li class="features__card card">
-                                <div class="card__buttons card__buttons--hidden">
-                                    <span class="card__wrapper card__wrapper--green">
+                                <div class="card__new-flag"></div>
+                                <div class="card__buttons">
+                                    <span class="card__wrapper">
                                         <a class="card__button card__button--green" href="#">
                                             <img class="card__button-image" src="img/icon-cart.svg" alt="купить">
                                             Купить
                                         </a>
                                     </span>
-                                    <span class="card__wrapper card__wrapper--white">
+                                    <span class="card__wrapper">
                                         <a class="card__button card__button--white" href="#">В закладки</a>
                                     </span>
-                                    <div class="card__new-flag new-flag"></div>
                                 </div>
                                 <h5 class="card__title">
                                     <a class="card__name" href="#">Перфоратор BOSCH BFG 9000</a>
                                 </h5>
-                                <span class="card__old-price">32500 р.</span>
-                                <p class="card__price">
-                                    <a class="card__price-button" href="#">25500 р.</a>
-                                </p>
+                                <div class="card__price-block">
+                                    <span class="card__old-price">32500 р.</span>
+                                    <p class="card__price">
+                                        <a class="card__price-button" href="#">25500 р.</a>
+                                    </p>
+                                </div>
                             </li>
                             <li class="features__card card">
-                                <div class="card__buttons card__buttons--hidden">
-                                    <span class="card__wrapper card__wrapper--green">
+                                <div class="card__new-flag"></div>
+                                <div class="card__buttons">
+                                    <span class="card__wrapper">
                                         <a class="card__button card__button--green" href="#">
                                             <img class="card__button-image" src="img/icon-cart.svg" alt="купить">
                                             Купить
                                         </a>
                                     </span>
-                                    <span class="card__wrapper card__wrapper--white">
+                                    <span class="card__wrapper">
                                         <a class="card__button card__button--white" href="#">В закладки</a>
                                     </span>
-                                    <div class="card__new-flag new-flag"></div>
                                 </div>
                                 <h5 class="card__title">
                                     <a class="card__name" href="#">Перфоратор BOSCH BFG 9000</a>
                                 </h5>
-                                <span class="card__old-price">32500 р.</span>
-                                <p class="card__price">
-                                    <a class="card__price-button" href="#">25500 р.</a>
-                                </p>
+                                <div class="card__price-block">
+                                    <span class="card__old-price">32500 р.</span>
+                                    <p class="card__price">
+                                        <a class="card__price-button" href="#">25500 р.</a>
+                                    </p>
+                                </div>
                             </li>
                             <li class="features__card card">
-                                <div class="card__buttons card__buttons--hidden">
-                                    <span class="card__wrapper card__wrapper--green">
+                                <div class="card__new-flag"></div>
+                                <div class="card__buttons">
+                                    <span class="card__wrapper">
                                         <a class="card__button card__button--green" href="#">
                                             <img class="card__button-image" src="img/icon-cart.svg" alt="купить">
                                             Купить
                                         </a>
                                     </span>
-                                    <span class="card__wrapper card__wrapper--white">
+                                    <span class="card__wrapper">
                                         <a class="card__button card__button--white" href="#">В закладки</a>
                                     </span>
-                                    <div class="card__new-flag new-flag"></div>
                                 </div>
                                 <h5 class="card__title">
                                     <a class="card__name" href="#">Перфоратор BOSCH BFG 9000</a>
                                 </h5>
-                                <span class="card__old-price">32500 р.</span>
-                                <p class="card__price">
-                                    <a class="card__price-button" href="#">25500 р.</a>
-                                </p>
+                                <div class="card__price-block">
+                                    <span class="card__old-price">32500 р.</span>
+                                    <p class="card__price">
+                                        <a class="card__price-button" href="#">25500 р.</a>
+                                    </p>
+                                </div>
                             </li>
                             <li class="features__card card">
-                                <div class="card__buttons card__buttons--hidden">
-                                    <span class="card__wrapper card__wrapper--green">
+                                <div class="card__new-flag"></div>
+                                <div class="card__buttons">
+                                    <span class="card__wrapper">
                                         <a class="card__button card__button--green" href="#">
                                             <img class="card__button-image" src="img/icon-cart.svg" alt="купить">
                                             Купить
                                         </a>
                                     </span>
-                                    <span class="card__wrapper card__wrapper--white">
+                                    <span class="card__wrapper">
                                         <a class="card__button card__button--white" href="#">В закладки</a>
                                     </span>
-                                    <div class="card__new-flag new-flag"></div>
                                 </div>
                                 <h5 class="card__title">
                                     <a class="card__name" href="#">Перфоратор BOSCH BFG 9000</a>
                                 </h5>
-                                <span class="card__old-price">32500 р.</span>
-                                <p class="card__price">
-                                    <a class="card__price-button" href="#">25500 р.</a>
-                                </p>
+                                <div class="card__price-block">
+                                    <span class="card__old-price">32500 р.</span>
+                                    <p class="card__price">
+                                        <a class="card__price-button" href="#">25500 р.</a>
+                                    </p>
+                                </div>
                             </li>
                             <li class="features__card card">
-                                <div class="card__buttons card__buttons--hidden">
-                                    <span class="card__wrapper card__wrapper--green">
+                                <div class="card__new-flag"></div>
+                                <div class="card__buttons">
+                                    <span class="card__wrapper">
                                         <a class="card__button card__button--green" href="#">
                                             <img class="card__button-image" src="img/icon-cart.svg" alt="купить">
                                             Купить
                                         </a>
                                     </span>
-                                    <span class="card__wrapper card__wrapper--white">
+                                    <span class="card__wrapper">
                                         <a class="card__button card__button--white" href="#">В закладки</a>
                                     </span>
-                                    <div class="card__new-flag new-flag"></div>
                                 </div>
                                 <h5 class="card__title">
                                     <a class="card__name" href="#">Перфоратор BOSCH BFG 9000</a>
                                 </h5>
-                                <span class="card__old-price">32500 р.</span>
-                                <p class="card__price">
-                                    <a class="card__price-button" href="#">25500 р.</a>
-                                </p>
+                                <div class="card__price-block">
+                                    <span class="card__old-price">32500 р.</span>
+                                    <p class="card__price">
+                                        <a class="card__price-button" href="#">25500 р.</a>
+                                    </p>
+                                </div>
                             </li>
                         </ul>
                         <ul class="features__paginator paginator">
@@ -499,7 +517,7 @@
             </ul>
         </div>
     </footer>
-    <div class="order-dialog relative">
+    <div class="order-dialog">
         <h3 class="order-dialog__title visually-hidden">Диалог покупки</h3> <!-- ??? -->
             <a class="order-dialog__close close" href="#">
                 <img class="close__img" src="img/close.svg" alt="закрыть окно" width="21" height="21">
