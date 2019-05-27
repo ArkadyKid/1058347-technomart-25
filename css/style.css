@@ -111,12 +111,10 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #ee3643;
-  box-shadow: inset 0 -5px 0 rgba(181, 41, 51, 0.76);
 }
 
 .logo__link {
-  padding-top: 13px;
-  padding-bottom: 15px;
+  padding-top: 12px;
   padding-left: 56px;
   padding-right: 55px;
 }
@@ -130,7 +128,16 @@ body {
 }
 
 .header__logo {
-  margin-bottom: -5px;
+  position: relative;
+}
+
+.header__logo::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 5px;
+    width: 100%;
+    background-color: #b72f38;
 }
 
 .search {
@@ -306,11 +313,6 @@ body {
   color: #ee3643;
 }
 
-.header-contacts__phone-image {
-  padding-right: 40px;
-  padding-left: 15px;
-}
-
 .header-contacts__phone:hover .header-contacts__phone-image {
   opacity: 0.5;
 }
@@ -320,6 +322,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   text-align: center;
+  font-style: normal;
 }
 
 .header__user-block {
@@ -438,6 +441,7 @@ body {
 
 .nav__list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   justify-content: center;
@@ -853,7 +857,7 @@ body {
   text-decoration: none;
 }
 
-.breadcrumbs__link--img {
+.breadcrumbs__item:first-child .breadcrumbs__link {
   background-image: url("../img/icon-home.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -882,6 +886,7 @@ body {
 }
 
 .category__wrapper--right {
+  flex-direction: column;
   width: calc(100% / 4 * 3 - 10px);
 }
 
@@ -1115,13 +1120,6 @@ body {
   opacity: 1;
 }
 
-.sort__link--down:hover,
-.sort__link--down:focus,
-.sort__link--up:hover,
-.sort__link--up:focus {
-  opacity: 1;
-}
-
 .sort__link--down {
   display: flex;
   width: 11px;
@@ -1135,6 +1133,13 @@ body {
   background-image: url("../img/icon-down-dir-active.svg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.sort__link--down:hover,
+.sort__link--down:focus,
+.sort__link--up:hover,
+.sort__link--up:focus {
+  opacity: 1;
 }
 
 .popular__wrapper {
@@ -1217,6 +1222,7 @@ body {
   line-height: 1.11;
   text-align: center;
   text-decoration: none;
+  color: #000000;
 }
 
 .card__wrapper {
@@ -1341,7 +1347,7 @@ body {
   top: 0;
   background-size: contain;
   right: 0;
-  background-image: url(../img/new-flag.png);
+  background-image: url("../img/new-flag.png");
   background-repeat: no-repeat;
 }
 
@@ -1463,6 +1469,7 @@ body {
   font-size: 18px;
   line-height: 1.11;
   text-decoration: none;
+  color: #000000;
 }
 
 .transport-companies__button-wrapper {
@@ -1482,6 +1489,7 @@ body {
 .contacts__button-wraper {
   width: 300px;
 }
+
 /* footer */
 
 .footer {
@@ -1493,12 +1501,20 @@ body {
   background-color: #293449;
 }
 
+.footer__logo-link {
+  padding-top: 19px;
+  padding-left: 41px;
+  padding-right: 41px;
+  padding-bottom: 18px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+}
 .footer-contact {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.33;
   text-decoration: none;
   color: #f3f7f9;
+  font-style: normal;
 }
 
 .footer__copyright {
@@ -1675,8 +1691,8 @@ body {
 }
 
 .modal__textarea {
-  width: 460px;
-  height: 114px;
+  width: 100%;
+  height: 25%;
   border: solid 2px #d7dcde;
   background-color: #ffffff;
 }

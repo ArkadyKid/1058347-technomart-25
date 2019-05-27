@@ -20,7 +20,7 @@
                 <form class="header__search search" action="https://echo.htmlacademy.ru" method="get">
                     <input class="search__input" type="search" name="search" placeholder="Поиск:">
                     <button class="search__button" type="submit">
-                        <img class="search__button-img" src="img/icon-search.svg" alt="поиск">
+                        <img class="search__button-img" src="img/icon-search.svg" alt="поиск" width="17" height="17">
                     </button>
                 </form>
                 <div class="header__customer-menu customer-menu">
@@ -36,7 +36,6 @@
                             <img class="customer-menu__img customer-menu__img--cart" src="img/icon-cart.svg" alt="Корзина" width="15" height="15">
                             Корзина:
                             <span class="customer-menu__value">0</span>
-
                         </a>
                     </div>
                     <div class="customer-menu__button">
@@ -51,7 +50,7 @@
                 <div class="header__contacts header-contacts">
                     <span class="header-contacts__wrapper">
                         <a class="header-contacts__phone" href="tel:+78125550555">
-                            <img class="header-contacts__phone-image" src="img/icon-phone.svg" alt="телефон">
+                            <img class="header-contacts__phone-image" src="img/icon-phone.svg" alt="телефон" width="19" height="19">
                             +7 (812) 555-05-55
                         </a>
                     </span>
@@ -61,7 +60,7 @@
                     <ul class="header__user-menu user-menu">
                         <li class="user-menu__item login__block">
                             <a class="login__block-link user-button" href="#">
-                                <img class="user-button__image" src="img/icon-login.svg" alt="вход">
+                                <img class="user-button__image" src="img/icon-login.svg" alt="вход" width="20" height="17">
                                 Войти
                             </a>
                         </li>
@@ -106,7 +105,7 @@
                     <li class="promo__item promo__item--orange">
                         <span class="promo__name">Материалы</span>
                         <img class="promo__image" src="img/icon-1.svg" alt="Материалы" width="44" height="65">
-                        <span class="promo__wrapper promo__wrapper--orange">
+                        <span class="promo__wrapper">
                             <a class="promo__link" href="#">На любой вкус</a>
                         </span>
                         <div class="promo__new-flag"></div>
@@ -114,17 +113,17 @@
                     <li class="promo__item promo__item--blue">
                         <span class="promo__name">Инструмент</span>
                         <img class="promo__image" src="img/icon-2.svg" alt="Инструмент" width="75" height="61">
-                        <span class="promo__wrapper promo__wrapper--blue">
+                        <span class="promo__wrapper">
                             <a class="promo__link" href="#">На все случаи жизни</a>
                         </span>
                     </li>
                 </ul>
                 <section class="promo__slider slider">
                     <label class="slider__paginator slider__paginator--left" for="to-left">
-                        <img class="slider__paginator-image" src="img/icon-left.svg" alt="налево">
+                        <img class="slider__paginator-image" src="img/icon-left.svg" alt="налево" width="22" height="40">
                     </label>
                     <label class="slider__paginator slider__paginator--right" for="to-right">
-                        <img class="slider__paginator-image" src="img/icon-right.svg" alt="направо">
+                        <img class="slider__paginator-image" src="img/icon-right.svg" alt="направо" width="22" height="40">
                     </label>
                     <input class="slider__radio slider__radio--left" id="to-left" type="radio" value="first-page" name="select-page" checked>
                     <i class="slider__paginator-wrapper slider__paginator-wrapper--left"></i>
@@ -150,21 +149,21 @@
                     <li class="promo__item promo__item--plum">
                         <span class="promo__name">Техника</span>
                         <img class="promo__image" src="img/icon-3.svg" alt="Техника" width="78" height="62">
-                        <span class="promo__wrapper promo__wrapper--plum">
+                        <span class="promo__wrapper">
                             <a class="promo__link" href="#">Для стройки</a>
                         </span>
                     </li>
                     <li class="promo__item promo__item--feijoa">
                         <span class="promo__name">Скидка 50%</span>
                         <img class="promo__image" src="img/icon-4.svg" alt="Для стройки" width="59" height="72">
-                        <span class="promo__wrapper promo__wrapper--feijoa">
+                        <span class="promo__wrapper">
                             <a class="promo__link" href="#">На 350 товаров</a>
                         </span>
                     </li>
                     <li class="promo__item promo__item--lightorange">
                         <span class="promo__name">Доставка</span>
                         <img class="promo__image" src="img/icon-5.svg" alt="Доставка" width="78" height="63">
-                        <span class="promo__wrapper promo__wrapper--orange">
+                        <span class="promo__wrapper">
                             <a class="promo__link" href="#">Бесплатно</a>
                         </span>
                     </li>
@@ -183,7 +182,31 @@
                     <div class="card__buttons">
                         <span class="card__wrapper">
                             <a class="card__button card__button--green" href="#">
-                                <img class="card__button-image" src="img/icon-cart.svg" alt="купить">
+                                <img class="card__button-image" src="img/icon-cart.svg" alt="купить" width="15" height="15">
+                                Купить
+                            </a>
+                        </span>
+                        <span class="card__wrapper">
+                            <a class="card__button card__button--white" href="#">В закладки</a>
+                        </span>
+                    </div>
+                    <h5 class="card__title">
+                        <a class="card__name" href="#">Перфоратор BOSCH BFG 9000</a>
+                    </h5>
+                    <div class="card__price-block">
+                        <span class="card__old-price">32500 р.</span>
+                        <p class="card__price">
+                            <a class="card__price-button" href="#">25500 р.</a>
+                        </p>
+                    </div>
+                </li>
+                <li class="popular__card card">
+                    <div class="card__new-flag"></div>
+                    <div class="card__buttons">
+
+                        <span class="card__wrapper">
+                            <a class="card__button card__button--green" href="#">
+                                <img class="card__button-image" src="img/icon-cart.svg" alt="купить" width="15" height="15">
                                 Купить
                             </a>
                         </span>
@@ -206,7 +229,7 @@
                     <div class="card__buttons">
                         <span class="card__wrapper">
                             <a class="card__button card__button--green" href="#">
-                                <img class="card__button-image" src="img/icon-cart.svg" alt="купить">
+                                <img class="card__button-image" src="img/icon-cart.svg" alt="купить" width="15" height="15">
                                 Купить
                             </a>
                         </span>
@@ -229,30 +252,7 @@
                     <div class="card__buttons">
                         <span class="card__wrapper">
                             <a class="card__button card__button--green" href="#">
-                                <img class="card__button-image" src="img/icon-cart.svg" alt="купить">
-                                Купить
-                            </a>
-                        </span>
-                        <span class="card__wrapper">
-                            <a class="card__button card__button--white" href="#">В закладки</a>
-                        </span>
-                    </div>
-                    <h5 class="card__title">
-                        <a class="card__name" href="#">Перфоратор BOSCH BFG 9000</a>
-                    </h5>
-                    <div class="card__price-block">
-                        <span class="card__old-price">32500 р.</span>
-                        <p class="card__price">
-                            <a class="card__price-button" href="#">25500 р.</a>
-                        </p>
-                    </div>
-                </li>
-                <li class="popular__card card">
-                    <div class="card__new-flag"></div>
-                    <div class="card__buttons">
-                        <span class="card__wrapper">
-                            <a class="card__button card__button--green" href="#">
-                                <img class="card__button-image" src="img/icon-cart.svg" alt="купить">
+                                <img class="card__button-image" src="img/icon-cart.svg" alt="купить" width="15" height="15">
                                 Купить
                             </a>
                         </span>
@@ -406,7 +406,7 @@
         <div class="footer__top container">
             <div class="footer__top-block">
                 <div class="footer__logo logo">
-                    <a class="logo__link">
+                    <a class="footer__logo-link" href="index.html">
                         <img class="logo__image" src="img/logo-technomart.svg" alt="ТЕХНОМАРТ" width="138" height="23">
                     </a>
                 </div>
