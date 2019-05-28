@@ -672,13 +672,23 @@ body {
 }
 
 .slider__paginator--right {
-  top: 114px;
-  right: 20px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 42px;
 }
 
 .slider__paginator--left {
-  top: 114px;
-  left: 25px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-left: 25px;
 }
 
 .slider__radio {
@@ -940,6 +950,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 13px;
+  font-weight: normal;
   line-height: 1.38;
   text-transform: uppercase;
 }
@@ -969,6 +980,7 @@ body {
   padding: 0;
   background-color: #f7f3ec;
   font-size: 13px;
+  font-weight: normal;
   line-height: 1.38;
   text-transform: uppercase;
 }
@@ -1199,7 +1211,6 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-bottom: 21px;
 }
 
 .popular__title {
@@ -1214,7 +1225,7 @@ body {
 .features__list {
   margin: 0;
   padding: 0;
-  margin-bottom: 52px;
+  margin-bottom: 31px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1225,6 +1236,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 21px;
   border: solid 1px #eaeaea;
   background-color: #ffffff;
   list-style: none;
@@ -1247,7 +1259,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-size: contain;
+  background-size: cover;
   background-image: url("../img/perforator_1.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1275,7 +1287,16 @@ body {
   display: flex;
   width: 135px;
   align-items: center;
-  opacity: 1;
+  opacity: 0;
+}
+
+.card__wrapper:first-child {
+  padding-bottom: 8px;
+  padding-top: 44px;
+}
+
+.card__wrapper:last-child {
+  padding-bottom: 55px;
 }
 
 .card__button {
@@ -1284,6 +1305,8 @@ body {
   width: inherit;
   align-items: center;
   justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 1.29;
@@ -1311,6 +1334,8 @@ body {
 }
 
 .card__button--white {
+  padding-top: 7px;
+  padding-bottom: 7px;
   border: solid 3px #63a63e;
   background-color: #ffffff;
   color: #32425c;
@@ -1382,6 +1407,10 @@ body {
   text-align: center;
   color: #ffffff;
   text-decoration: none;
+}
+
+.card__title {
+  margin: 0;
 }
 
 .card__new-flag,
