@@ -104,6 +104,7 @@ body {
 .header__top-wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -354,6 +355,7 @@ body {
   font-size: 21px;
   line-height: 1;
   text-decoration: none;
+  color: #000000;
 }
 
 .user-button__image {
@@ -407,7 +409,7 @@ body {
   list-style: none;
 }
 
-.user-menu__info:last-child::before {
+.user-menu__info:not(:first-child)::before {
   content: "";
   display: inline-block;
   width: 6px;
@@ -495,6 +497,7 @@ body {
   font-size: 30px;
   line-height: 1;
   text-transform: uppercase;
+  color: #32425c;
 }
 
 .promo {
@@ -506,6 +509,7 @@ body {
 .promo__menu {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -513,6 +517,7 @@ body {
 .promo__menu--right {
   flex-direction: column;
   margin-left: auto;
+  flex-wrap: wrap;
 }
 
 .promo__container {
@@ -521,8 +526,16 @@ body {
   justify-content: space-between;
 }
 
+.promo__contain {
+  display: flex;
+  flex-direction: column;
+}
+
 .promo__item {
+  display: flex;
+  justify-content: space-between;
   position: relative;
+  min-width: 300px;
   margin-bottom: 20px;
   list-style: none;
 }
@@ -549,6 +562,9 @@ body {
 }
 
 .promo__name {
+  padding-top: 20px;
+  padding-left: 23px;
+  padding-bottom: 14px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -556,8 +572,20 @@ body {
   color: #ffffff;
 }
 
+.promo__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
 .promo__wrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+  margin-bottom: 22px;
+  width: 135px;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -570,9 +598,9 @@ body {
 }
 
 .promo__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: inherit;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 1.29;
@@ -584,7 +612,6 @@ body {
 
 .slider {
   position: relative;
-  width: 620px;
 }
 
 .slider__list {
@@ -594,12 +621,15 @@ body {
 
 .slider__item {
   position: relative;
+  display: flex;
+  flex-direction: column;
   list-style: none;
+  min-width: 620px;
   background-color: #201513;
   background-image: url("../img/slider-1.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-size: contain;
+  background-size: cover;
 }
 
 .slider__item--perf {
@@ -608,9 +638,9 @@ body {
 }
 
 .slider__title {
-  position: absolute;
-  top: -24px;
-  left: 24px;
+  margin: 0;
+  margin-top: 27px;
+  margin-left: 24px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 700;
@@ -620,20 +650,12 @@ body {
 }
 
 .slider__text {
-  position: absolute;
-  top: 63px;
-  left: 26px;
+  margin-top: 5px;
+  margin-left: 25px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.33;
   color: #ffffff;
-}
-
-.slider__button-wrapper {
-  position: absolute;
-  bottom: 20px;
-  left: 27px;
-  width: 195px;
 }
 
 .slider__item--hidden {
@@ -665,6 +687,7 @@ body {
   position: absolute;
   z-index: 1;
   width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: #ffffff;
   cursor: pointer;
@@ -701,7 +724,7 @@ body {
 }
 
 .slider__radio--right:checked ~ .slider__item--perf {
-  display: block;
+  display: flex;
 }
 
 .slider__radio--right:checked ~ .slider__item--drill {
@@ -829,6 +852,14 @@ body {
   display: flex;
 }
 
+.slider__button-wrapper {
+  width: 195px;
+  justify-content: center;
+  align-self: flex-start;
+  margin-top: 115px;
+  margin-left: 25px;
+  margin-bottom: 23px;
+}
 .services-slider__button {
   width: 195px;
 }
@@ -855,6 +886,7 @@ body {
   line-height: 1.38;
   text-transform: uppercase;
   text-decoration: none;
+  color: #000000;
 }
 
 .breadcrumbs__item:first-child .breadcrumbs__link {
@@ -981,12 +1013,12 @@ body {
 }
 
 .value-block {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
 
 .value-block__block {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -997,13 +1029,15 @@ body {
   background-color: #f7f3ec;
 }
 
-.value-block__block:first-child::before {
+.value-block::before {
   position: absolute;
   content: "";
   width: 11px;
   height: 1px;
   background-color: black;
-  right: -20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .manufacturer__wrapper {
@@ -1157,6 +1191,7 @@ body {
 .popular__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   margin-bottom: 21px;
@@ -1199,9 +1234,11 @@ body {
 }
 
 .card__buttons {
-  width: 218px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
   background-image: url("../img/perforator_1.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1227,7 +1264,6 @@ body {
 
 .card__wrapper {
   display: flex;
-  margin: auto;
   width: 135px;
   align-items: center;
   opacity: 0;
@@ -1253,9 +1289,24 @@ body {
   background-color: #63a63e;
 }
 
+.card__button--green::before {
+  content: "";
+  position: absolute;
+  opacity: 0.3;
+  background-image: url("../img/icon-cart.svg");
+  background-position: center;
+  width: 15px;
+  height: 15px;
+}
+
+.card__button--green:hover .card__button--green::before {
+  opacity: 1;
+}
+
 .card__button--white {
   border: solid 3px #63a63e;
   background-color: #ffffff;
+  color: #32425c;
 }
 
 .card__button--white:hover {
@@ -1264,18 +1315,7 @@ body {
 
 .card__button--white:active {
   border: solid 3px rgba(55, 60, 92, 0.3);
-}
-
-.card__button--white:active .card__button--white {
   color: rgba(55, 60, 92, 0.3);
-}
-
-.card__button--white {
-  color: #32425c;
-}
-
-.card__button-image {
-  opacity: 0.3;
 }
 
 .card__button--green:hover {
@@ -1287,8 +1327,8 @@ body {
   background-color: #518534;
 }
 
-.card__button--green:hover .card__button-image,
-.card__button--green:active .card__button-image {
+.card__button--green:hover,
+.card__button--green:active {
   opacity: 1;
 }
 
@@ -1329,10 +1369,7 @@ body {
 
 .card__price-button {
   display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 21px;
-  ;
   font-size: 17px;
   font-weight: 700;
   line-height: 1.06;
@@ -1345,10 +1382,7 @@ body {
 .promo__new-flag {
   position: absolute;
   top: 0;
-  background-size: contain;
   right: 0;
-  background-image: url("../img/new-flag.png");
-  background-repeat: no-repeat;
 }
 
 .paginator {
@@ -1377,12 +1411,12 @@ body {
   width: inherit;
   justify-content: center;
   align-items: center;
-  ;
   font-size: 13px;
   line-height: 1.38;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  color: #000000;
 }
 
 .paginator__item--long {
@@ -1680,7 +1714,6 @@ body {
 }
 
 .modal__label {
-  width: 72px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1;
@@ -1764,6 +1797,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
   width: inherit;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
