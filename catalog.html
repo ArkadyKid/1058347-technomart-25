@@ -182,8 +182,8 @@
                 </section>
                 <div class="category__wrapper category__wrapper--right">
                     <section class="category__sort sort">
-                        <h3 class="sort__title">Сортировка</h3>
-                        <ul class="sort__menu">
+                        <h3 class="sort__title">Сортировка:</h3>
+                        <ul class="sort__menu sort__menu--by">
                             <li class="sort__item">
                                 <a class="sort__link sort__link--active" href="#">По цене</a>
                             </li>
@@ -194,7 +194,7 @@
                                 <a class="sort__link" href="#">По функционалу</a>
                             </li>
                         </ul>
-                        <ul class="sort__direction-menu sort__menu">
+                        <ul class="sort__menu">
                             <li class="sort__item">
                                 <a class="sort__link sort__link--up" href="#" aria-label="сортировка по возрастанию"></a>
                             </li>
@@ -398,9 +398,6 @@
                                     <span class="card__wrapper">
                                         <a class="card__button card__button--white" href="#">В закладки</a>
                                     </span>
-                                    <span class="card__wrapper">
-                                        <a class="card__button card__button--white" href="#">В закладки</a>
-                                    </span>
                                 </div>
                                 <h5 class="card__title">
                                     <a class="card__name" href="#">Перфоратор BOSCH BFG 2000</a>
@@ -412,6 +409,20 @@
                                 </div>
                             </li>
                         </ul>
+                        <ul class="features__paginator paginator">
+                            <li class="paginator__item paginator__item--active">
+                                <a class="paginator__link paginator__link--active">1</a>
+                            </li>
+                            <li class="paginator__item">
+                                <a class="paginator__link" href="#">2</a>
+                            </li>
+                            <li class="paginator__item">
+                                <a class="paginator__link" href="#">3</a>
+                            </li>
+                            <li class="paginator__item paginator__item--long">
+                                <a class="paginator__link" href="#">Следующая</a>
+                            </li>
+                        </ul>
                     </section>
                 </div>
             </div>
@@ -419,8 +430,11 @@
         <section class="category__about about">
             <div class="container">
                 <h3 class="about__title">Пара слов о перфораторах</h3>
+                <p class="about__text about__text--top">
+                    Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+                </p>
                 <p class="about__text">
-                    Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+                    Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
                 </p>
             </div>
         </section>
@@ -452,9 +466,9 @@
                 </ul>
             </div>
             <div class="footer__middle">
-                <div class="footer-contacts">
-                    <a class="footer-contacts__phone footer-contact" href="tel:+78125550555">+7 (812) 555-05-55</a>
-                    <address class="footer-contacts__address footer-contact">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+                <div class="footer__contacts">
+                    <address class="footer__contacts-address footer-contact">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+                    <a class="footer__contacts-phone footer-contact" href="tel:+78125550555">+7 (812) 555-05-55</a>
                 </div>
                 <ul class="footer__categories footer-nav">
                     <li class="footer-nav__item">
@@ -472,29 +486,31 @@
                 </ul>
             </div>
         </div>
-        <div class="footer__bottom container">
-            <p class="footer__copyright">&copy; 2010-2017 Компания «Техномарт»‎ Все права защищены</p>
-            <ul class="footer__social social">
-                <li class="social__item">
-                    <a class="social__link social__link--vk" href="http://vk.com" aria-label="Перейти на страницу группы вконтакте"></a>
-                </li>
-                <li class="social__item">
-                    <a class="social__link social__link--facebook" href="http://facebook.com" aria-label="Перейти на страницу группы facebook"></a>
-                </li>
-                <li class="social__item">
-                    <a class="social__link social__link--instagram" href="http://instagram.com" aria-label="Перейти на страницу группы instagram"></a>
-                </li>
-            </ul>
-            <ul class="footer__developer developer footer-nav">
-                <li class="developer__item">
-                    <p class="developer__text">Обратная связь:</p>
-                    <a class="developer__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-                </li>
-                <li class="developer__item">
-                    <p class="developer__text">Разработано-</p>
-                    <a class="developer__link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-                </li>
-            </ul>
+        <div class="footer__bottom">
+            <div class="footer__bottom-container">
+                <p class="footer__copyright">&copy; 2010-2017 Компания «Техномарт»‎ Все права защищены</p>
+                <ul class="footer__social social">
+                    <li class="social__item">
+                        <a class="social__link social__link--vk" href="http://vk.com" aria-label="Перейти на страницу группы вконтакте"></a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--facebook" href="http://facebook.com" aria-label="Перейти на страницу группы facebook"></a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--instagram" href="http://instagram.com" aria-label="Перейти на страницу группы instagram"></a>
+                    </li>
+                </ul>
+                <ul class="footer__developer developer">
+                    <li class="developer__item">
+                        <p class="developer__text">Обратная связь:</p>
+                        <a class="developer__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                    </li>
+                    <li class="developer__item">
+                        <p class="developer__text">Разработано-</p>
+                        <a class="developer__link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
     <div class="order-dialog">
@@ -504,7 +520,7 @@
         </a>
         <div class="order-dialog__content">
             <img class="order-dialog__img" src="img/check.svg" alt="товар добавлен в корзину" width="66" height="66">
-            <b class="order-dialog__text">Товар добавлен в корзину!</b>
+            <span class="order-dialog__text">Товар добавлен в корзину!</span>
         </div>
         <div class="order-dialog__button">
             <span class="order-dialog__button-link link-button">

@@ -407,8 +407,8 @@
             </article>
             <section class="contacts">
                 <h2 class="contacts__title second-title">Контакты</h2>
-                <p class="contacts__text">Вы можете забрать товар сами,<br>
-                    заехав в наш офис:
+                <p class="contacts__text">
+                    Вы можете забрать товар сами, заехав в наш офис:
                 </p>
                 <p class="contacts__map map">
                     <a class="map__link" href="https://www.google.com/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191186/@59.9387969,30.3208946,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca5ba729:0xea9c53d4493c879f!8m2!3d59.9387942!4d30.3230833?hl=ru">
@@ -448,9 +448,9 @@
                 </ul>
             </div>
             <div class="footer__middle">
-                <div class="footer-contacts">
-                    <a class="footer-contacts__phone footer-contact" href="tel:+78125550555">+7 (812) 555-05-55</a>
-                    <address class="footer-contacts__address footer-contact">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+                <div class="footer__contacts">
+                    <address class="footer__contacts-address footer-contact">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+                    <a class="footer__contacts-phone footer-contact" href="tel:+78125550555">+7 (812) 555-05-55</a>
                 </div>
                 <ul class="footer__categories footer-nav">
                     <li class="footer-nav__item">
@@ -468,29 +468,31 @@
                 </ul>
             </div>
         </div>
-        <div class="footer__bottom container">
-            <p class="footer__copyright">&copy; 2010-2017 Компания «Техномарт»‎ Все права защищены</p>
-            <ul class="footer__social social">
-                <li class="social__item">
-                    <a class="social__link social__link--vk" href="http://vk.com" aria-label="Перейти на страницу группы вконтакте"></a>
-                </li>
-                <li class="social__item">
-                    <a class="social__link social__link--facebook" href="http://facebook.com" aria-label="Перейти на страницу группы facebook"></a>
-                </li>
-                <li class="social__item">
-                    <a class="social__link social__link--instagram" href="http://instagram.com" aria-label="Перейти на страницу группы instagram"></a>
-                </li>
-            </ul>
-            <ul class="footer__developer developer">
-                <li class="developer__item">
-                    <p class="developer__text">Обратная связь:</p>
-                    <a class="developer__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-                </li>
-                <li class="developer__item">
-                    <p class="developer__text">Разработано-</p>
-                    <a class="developer__link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-                </li>
-            </ul>
+        <div class="footer__bottom">
+            <div class="footer__bottom-container">
+                <p class="footer__copyright">&copy; 2010-2017 Компания «Техномарт»‎ Все права защищены</p>
+                <ul class="footer__social social">
+                    <li class="social__item">
+                        <a class="social__link social__link--vk" href="http://vk.com" aria-label="Перейти на страницу группы вконтакте"></a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--facebook" href="http://facebook.com" aria-label="Перейти на страницу группы facebook"></a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--instagram" href="http://instagram.com" aria-label="Перейти на страницу группы instagram"></a>
+                    </li>
+                </ul>
+                <ul class="footer__developer developer">
+                    <li class="developer__item">
+                        <p class="developer__text">Обратная связь:</p>
+                        <a class="developer__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                    </li>
+                    <li class="developer__item">
+                        <p class="developer__text">Разработано-</p>
+                        <a class="developer__link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
     <div class="popup">
@@ -498,7 +500,7 @@
             <a class="popup__close close" href="#">
                 <img class="close__img" src="img/close.svg" alt="закрыть окно" width="21" height="21">
             </a>
-            <iframe class="popup__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.599104365163!2d30.320894616662248!3d59.938794181876176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1558261815315!5m2!1sru!2sru" allowfullscreen></iframe>
+            <iframe class="popup__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.599104365163!2d30.320894616662248!3d59.938794181876176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1558261815315!5m2!1sru!2sru" allowfullscreen width="940" height="446"></iframe>
     </div>
     <div class="modal">
         <h3 class="modal__title visually-hidden">Обратная связь</h3>
@@ -507,17 +509,21 @@
             </a>
         <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="modal__fieldset">
-                <label class="modal__label" for="input-name">Ваше имя:
-                    <input class="modal__input" id="input-name" type="text" placeholder="Имя Фамилия" name="name">
-                </label>
-                <label class="modal__label" for="input-email">Ваш e-mail:
-                    <input class="modal__input" id="input-email" type="email" placeholder="email@example.com" name="email">
-                </label>
-                <label class="modal__label" for="input-text">Текст письма:
-                    <textarea class="modal__textarea" id="input-text" placeholder="В свободной форме" name="text"></textarea>
-                </label>
+                <div class="modal__container">
+                    <label class="modal__label" for="input-name">Ваше имя:
+                        <input class="modal__input" id="input-name" type="text" placeholder="Имя Фамилия" name="name">
+                    </label>
+                    <label class="modal__label" for="input-email">Ваш e-mail:
+                        <input class="modal__input" id="input-email" type="email" placeholder="email@example.com" name="email">
+                    </label>
+                    <label class="modal__label" for="input-text">Текст письма:
+                        <textarea class="modal__textarea" id="input-text" placeholder="В свободной форме" name="text"></textarea>
+                    </label>
+                </div>
             </fieldset>
-            <button class="modal__button link-button__button" type="submit">Отправить</button>
+            <div class="modal__wrapper">
+                <button class="modal__button link-button__button" type="submit">Отправить</button>
+            </div>
         </form>
     </div>
 </body>
