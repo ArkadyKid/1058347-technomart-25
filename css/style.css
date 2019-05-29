@@ -1266,29 +1266,18 @@ body {
 .card__buttons {
   display: none;
 }
+
 .card:hover .card__buttons {
   display: flex;
-  height: 178px;
+  min-height: 178px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
 
  .card:hover .card__image-wrapper {
   display: none;
 }
-/* .card__image-wrapper {
-  display: none;
-}
-.card__buttons {
-  display: flex;
-  height: 170px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-} */
-
 
 .card__name {
   display: flex;
@@ -1303,11 +1292,8 @@ body {
 .card__wrapper {
   display: flex;
   width: 135px;
-  align-items: center;
-}
-
-.card__wrapper:first-child {
   padding-bottom: 8px;
+  align-items: center;
 }
 
 .card__button {
