@@ -143,7 +143,6 @@ body {
 
 .search {
   display: flex;
-  width: 100%;
   max-width: 270px;
   margin-right: auto;
 }
@@ -167,7 +166,6 @@ body {
 }
 
 .search__input {
-  width: 100%;
   order: 2;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 17px;
@@ -204,7 +202,7 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 14px;
-  padding-right: 23px;
+  padding-right: 31px;
   padding-bottom: 13px;
   padding-left: 12px;
   color: #ffffff;
@@ -240,7 +238,7 @@ body {
 }
 
 .customer-menu__img {
-  margin-right: 21px;
+  margin-right: 13px;
   opacity: 0.3;
 }
 
@@ -275,11 +273,12 @@ body {
 
 .header__middle {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .header__main-title {
   margin: 0;
+  margin-top: 3px;
   max-width: 222px;
   margin-left: 51px;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -293,8 +292,8 @@ body {
 .header-contacts {
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
-  margin-right: 20px;
+  margin-left: 47px;
+  min-width: 270px;
 }
 
 .header-contacts__wrapper {
@@ -308,6 +307,7 @@ body {
 .header-contacts__phone {
   padding-top: 8px;
   padding-bottom: 8px;
+  padding-right: 35px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
   text-decoration: none;
@@ -319,7 +319,12 @@ body {
   opacity: 0.5;
 }
 
+.header-contacts__phone-image {
+  margin-right: 34px;
+}
+
 .header-contacts__address {
+  margin-top: 5px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 1.71;
@@ -351,7 +356,7 @@ body {
   padding-top: 12px;
   padding-bottom: 11px;
   padding-left: 25px;
-  padding-right: 11px;
+  padding-right: 24px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
   line-height: 1;
@@ -359,8 +364,21 @@ body {
   color: #000000;
 }
 
+.login__block-link {
+  padding-left: 15px;
+}
+
+.quit__block-link {
+  padding-right: 3px;
+  padding-left: 12px;
+}
+
+.name__block-link {
+  padding-left: 13px;
+}
+
 .user-button__image {
-  margin-right: 3px;
+  margin-right: 8px;
   opacity: 0.3;
 }
 
@@ -391,6 +409,7 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  margin-right: 32px;
 }
 
 .user-menu__link {
@@ -412,13 +431,15 @@ body {
   margin-right: 23px;
   list-style: none;
 }
+.user-menu__info:first-child {
+  margin-right: 16px;
+}
 
 .user-menu__info:not(:first-child)::before {
   content: "";
   display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin-right: 27px;
+  padding: 2px;
+  margin-right: 10px;
   vertical-align: middle;
   border-radius: 3px;
   background-color: #32425c;
@@ -468,8 +489,8 @@ body {
 
 .nav__link {
   padding-top: 22px;
-  padding-bottom: 26px;
-  padding-right: 30px;
+  padding-bottom: 21px;
+  padding-right: 29px;
   padding-left: 30px;
   margin-left: 1px;
   margin-right: 1px;
@@ -486,7 +507,7 @@ body {
 }
 
 .nav__item:last-child .nav__link {
-  padding-right: 54px;
+  padding-right: 44px;
 }
 
 .nav__link:active {
@@ -551,7 +572,7 @@ body {
 }
 
 .promo {
-  margin-top: 55px;
+  margin-top: 60px;
   display: flex;
   margin-bottom: 53px;
 }
@@ -586,7 +607,7 @@ body {
   justify-content: space-between;
   position: relative;
   min-width: 300px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   list-style: none;
 }
 
@@ -634,7 +655,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-left: 25px;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   width: 135px;
   background-color: rgba(0, 0, 0, 0.1);
 }
@@ -830,7 +851,7 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  margin-top: 67px;
+  margin-top: 73px;
 }
 
 .services-slider__items::after {
@@ -1025,7 +1046,7 @@ body {
 }
 
 .category__about {
-  padding-bottom: 66px;
+  padding-bottom: 68px;
   background-color: #f2f6f8;
 }
 
@@ -1040,7 +1061,7 @@ body {
 .about__title {
   margin: 0;
   padding: 0;
-  padding-top: 62px;
+  padding-top: 65px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 1;
@@ -1373,7 +1394,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   border: 1px solid #eaeaea;
   background-color: #ffffff;
   list-style: none;
