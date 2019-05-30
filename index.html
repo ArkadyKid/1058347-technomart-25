@@ -348,35 +348,29 @@
                     Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
                 </p>
                 <div class="services__slider services-slider">
-                    <ul class="services-slider__list">
-                        <li class="services-slider__item">
-                            <input class="services-slider__radio services-slider__radio--delivery" id="delivery-radio" type="radio" name="services" value="delivery" checked>
-                            <label class="services-slider__wrapper" for="delivery-radio">Доставка</label>
-                            <section class="services-slider__block services-slider__block-delivery">
-                                <h3 class="services-slider__title">Доставка</h3>
-                                <p class="services-slider__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-                            </section>
-                        </li>
-                        <li class="services-slider__item">
-                            <input class="services-slider__radio services-slider__radio--warranty" id="warranty-radio" type="radio" name="services" value="warranty">
-                            <label class="services-slider__wrapper" for="warranty-radio">Гарантия</label>
-                            <section class="services-slider__block services-slider__block-warranty">
-                                <h3 class="services-slider__title">Гарантия</h3>
-                                <p class="services-slider__text">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
-                            </section>
-                        </li>
-                        <li class="services-slider__item">
-                            <input class="services-slider__radio services-slider__radio--credit" id="credit-radio" type="radio" name="services" value="credit">
-                            <label class="services-slider__wrapper" for="credit-radio">Кредит</label>
-                            <section class="services-slider__block services-slider__block-credit">
-                                <h3 class="services-slider__title">Кредит</h3>
-                                <p class="services-slider__text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-                                <span class="services-slider__button link-button">
-                                    <a class="link-button__button" href="#">Отправить заявку</a>
-                                </span>
-                            </section>
-                        </li>
-                    </ul>
+                    <input class="services-slider__radio services-slider__radio--delivery" id="delivery-radio" type="radio" name="services" value="delivery" checked>
+                    <input class="services-slider__radio services-slider__radio--warranty" id="warranty-radio" type="radio" name="services" value="warranty">
+                    <input class="services-slider__radio services-slider__radio--credit" id="credit-radio" type="radio" name="services" value="credit">
+                    <div class="services-slider__items">
+                        <label class="services-slider__wrapper services-slider__wrapper--delivery" for="delivery-radio">Доставка</label>
+                        <label class="services-slider__wrapper services-slider__wrapper--warranty" for="warranty-radio">Гарантия</label>
+                        <label class="services-slider__wrapper services-slider__wrapper--credit" for="credit-radio">Кредит</label>
+                    </div>
+                    <section class="services-slider__block services-slider__block-delivery">
+                        <h3 class="services-slider__title">Доставка</h3>
+                        <p class="services-slider__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, <br> поднимая его на ваш этаж!</p>
+                    </section>
+                    <section class="services-slider__block services-slider__block-warranty">
+                        <h3 class="services-slider__title">Гарантия</h3>
+                        <p class="services-slider__text">Если купленный у нас товар поломается или заискрит, <br> а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. <br> Дом уж восстановите как-нибудь сами.</p>
+                    </section>
+                    <section class="services-slider__block services-slider__block-credit">
+                        <h3 class="services-slider__title">Кредит</h3>
+                        <p class="services-slider__text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+                        <span class="services-slider__button link-button">
+                            <a class="link-button__button" href="#">Отправить заявку</a>
+                        </span>
+                    </section>
                 </div>
             </div>
         </section>
