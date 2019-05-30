@@ -273,7 +273,8 @@ body {
 
 .header__middle {
   display: flex;
-  margin-bottom: 39px;
+  margin-bottom: 37px;
+  min-height: 75px;
 }
 
 .header__main-title {
@@ -410,6 +411,7 @@ body {
   margin: 0;
   padding: 0;
   margin-right: 32px;
+  margin-top: 6px;
 }
 
 .user-menu__link {
@@ -954,7 +956,7 @@ body {
   margin-top: 67px;
   margin-left: 80px;
   padding-right: 345px;
-  padding-bottom: 126px;
+  padding-bottom: 131px;
 }
 
 .services-slider__radio--warranty:checked ~ .services-slider__block-warranty {
@@ -963,7 +965,7 @@ body {
   margin-top: 67px;
   margin-left: 80px;
   padding-right: 245px;
-  padding-bottom: 102px;
+  padding-bottom: 107px;
 }
 
 .services-slider__radio--credit:checked ~ .services-slider__block-credit {
@@ -972,7 +974,7 @@ body {
   margin-top: 67px;
   margin-left: 80px;
   padding-right: 340px;
-  padding-bottom: 106px;
+  padding-bottom: 111px;
 }
 
 .services-slider__button {
@@ -1690,7 +1692,7 @@ body {
 .about-company {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 86px;
+  margin-bottom: 84px;
 }
 
 .transport-companies {
