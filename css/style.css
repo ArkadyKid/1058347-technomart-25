@@ -744,7 +744,7 @@ body {
 
 .slider__paginator--right {
   right: 0;
-  top: 50%;
+  top: 52%;
   transform: translateY(-50%);
   padding-bottom: 40px;
   padding-top: 40px;
@@ -754,7 +754,7 @@ body {
 
 .slider__paginator--left {
   left: 0;
-  top: 50%;
+  top: 52%;
   transform: translateY(-50%);
   padding-bottom: 40px;
   padding-top: 40px;
