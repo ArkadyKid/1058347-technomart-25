@@ -2,7 +2,8 @@
   font-family: "Cuprum";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/cuprum.woff2") format("woff2"),
+  src:
+    url("../fonts/cuprum.woff2") format("woff2"),
     url("../fonts/cuprum.woff") format("woff");
 }
 
@@ -864,7 +865,6 @@ body {
   padding-top: 279px;
   padding-right: 10px;
   background-image: url("../img/shadow.png");
-  /* opacity: 0.25; */
 }
 
 
@@ -1062,6 +1062,7 @@ body {
 
 .about__title {
   margin: 0;
+  margin-bottom: 28px;
   padding: 0;
   padding-top: 65px;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -1074,10 +1075,6 @@ body {
 .about__text {
   margin: 0;
   font-size: 13px;
-}
-
-.about__text--top {
-  margin-top: 28px;
 }
 
 .filter__title {
@@ -1195,14 +1192,6 @@ body {
   border-radius: 50%;
 }
 
-.manufacturer__wrapper::before,
-.battery__wrapper::before {
-  content: "";
-  position: absolute;
-  padding: 40px;
-  left: -35px;
-}
-
 .manufacturer__check + .manufacturer__wrapper::before {
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
@@ -1221,6 +1210,25 @@ body {
 .battery__check:checked + .battery__wrapper::before {
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
+}
+
+.manufacturer__wrapper::before,
+.battery__wrapper::before {
+  content: "";
+  position: absolute;
+  padding: 15px;
+  left: -35px;
+  opacity: 0.2;
+}
+
+.manufacturer__text:hover .manufacturer__wrapper::before,
+.battery__text:hover .battery__wrapper::before {
+  opacity: 0.3;
+}
+
+.manufacturer__check:disabled + .manufacturer__wrapper::before,
+.battery__check:disabled + .battery__wrapper::before {
+  opacity: 0.1;
 }
 
 .manufacturer {
@@ -1264,6 +1272,10 @@ body {
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
   cursor: pointer;
+}
+
+.filter__button:hover {
+  border: solid 1px #bdc6ca;
 }
 
 .sort {
@@ -1542,13 +1554,6 @@ body {
   color: #a9a9a9;
 }
 
-/* .card__price {
-  margin: 0;
-  background-image: url("../img/item-button.svg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-} */
 .card__price {
   position: relative;
   margin: 0;
@@ -1556,11 +1561,12 @@ body {
   margin-right: 9px;
   background-color: #ee3643;
 }
+
 .card__price::after {
   content: "";
   position: absolute;
   top: 0;
-  left: 123px;
+  right: -19px;
   display: inline-block;
   border: 19px solid #ffffff;
   border-left-color: #ee3643;
@@ -1717,7 +1723,6 @@ body {
   line-height: 1.11;
   text-decoration: none;
   color: #000000;
-
 }
 
 .transport-companies__link::before {
@@ -1786,10 +1791,7 @@ body {
 }
 
 .footer__logo-link {
-  padding-top: 19px;
-  padding-left: 41px;
-  padding-right: 41px;
-  padding-bottom: 18px;
+  padding: 19px 41px 18px 41px;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 .footer-contact {
@@ -1804,13 +1806,13 @@ body {
 .footer-nav {
   display: flex;
   justify-content: space-between;
-  min-width: 545px;
   margin: 0;
   padding: 0;
 }
 
 .footer-nav__item {
   list-style: none;
+  margin-left: 59px;
 }
 
 .footer-nav__link {
@@ -1860,7 +1862,6 @@ body {
 
 .footer__categories {
   margin-top: 28px;
-  min-width: 523px;
 }
 
 .footer__bottom {
@@ -2058,6 +2059,7 @@ body {
   padding: 5px;
   border: 2px solid #d7dcde;
   background-color: #ffffff;
+  resize: vertical;
 }
 
 .modal__textarea:hover {
