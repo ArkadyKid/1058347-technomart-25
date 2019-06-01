@@ -1232,6 +1232,8 @@ body {
   opacity: 0.2;
 }
 
+.manufacturer__check:focus + .manufacturer__wrapper::before,
+.battery__check:focus + .battery__wrapper::before,
 .manufacturer__text:hover .manufacturer__wrapper::before,
 .battery__text:hover .battery__wrapper::before {
   opacity: 0.3;
