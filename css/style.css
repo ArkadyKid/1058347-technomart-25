@@ -1169,6 +1169,15 @@ body {
   line-height: 1.06;
   text-align: center;
   background-color: #f7f3ec;
+  border: none;
+  -moz-appearance: textfield;
+}
+
+.value-block__block::-webkit-inner-spin-button,
+.value-block__block::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .value-block::before {
