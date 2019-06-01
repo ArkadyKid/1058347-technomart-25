@@ -207,6 +207,10 @@ body {
   display: flex;
 }
 
+.customer-menu__button:hover {
+  background-color: #212a3a;
+}
+
 .customer-menu__link {
   display: flex;
   justify-content: center;
