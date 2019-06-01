@@ -1573,20 +1573,6 @@ body {
   margin: 0;
   margin-top: auto;
   margin-right: 9px;
-  background-color: #ee3643;
-}
-
-.card__price::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -19px;
-  display: inline-block;
-  border: 19px solid #ffffff;
-  border-left-color: #ee3643;
-  border-right-width: 0;
-  border-top-color: transparent;
-  border-bottom-color: transparent;
 }
 
 .card__price-button {
@@ -1603,6 +1589,39 @@ body {
   padding-bottom: 10px;
   padding-left: 9px;
   min-width: 123px;
+  background-color: #ee3643;
+}
+
+.card__price-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -19px;
+  display: inline-block;
+  border: 19px solid #ffffff;
+  border-left-color: #ee3643;
+  border-right-width: 0;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.card__price-button:hover,
+.card__price-button:focus{
+  background-color: #ca2c37;
+  outline: none;
+}
+
+.card__price-button:hover::after,
+.card__price-button:focus::after {
+  border-left-color: #ca2c37;
+}
+
+.card__price-button:active {
+  background-color: #ba2732;
+}
+
+.card__price-button:active::after {
+  border-left-color: #ba2732;
 }
 
 .paginator {
