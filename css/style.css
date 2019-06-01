@@ -137,12 +137,12 @@ body {
 }
 
 .header__logo::before {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    height: 5px;
-    width: 100%;
-    background-color: #b72f38;
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 5px;
+  width: 100%;
+  background-color: #b72f38;
 }
 
 .search {
@@ -447,6 +447,7 @@ body {
   margin-right: 23px;
   list-style: none;
 }
+
 .user-menu__info:first-child {
   margin-right: 16px;
 }
@@ -532,11 +533,6 @@ body {
 
 /* main */
 
-.link-button {
-  display: flex;
-  border: none;
-}
-
 .link-button__button:hover,
 .link-button__button:focus {
   background-color: #ca2c37;
@@ -581,8 +577,8 @@ body {
 }
 
 .promo {
-  margin-top: 60px;
   display: flex;
+  margin-top: 59px;
   margin-bottom: 53px;
 }
 
@@ -616,7 +612,7 @@ body {
   justify-content: space-between;
   position: relative;
   min-width: 300px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   list-style: none;
 }
 
@@ -698,6 +694,7 @@ body {
 
 .slider {
   position: relative;
+  display: flex;
 }
 
 .slider__list {
@@ -709,7 +706,6 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  list-style: none;
 }
 
 .slider__item-img {
@@ -723,7 +719,7 @@ body {
 
 .slider__title {
   margin: 0;
-  margin-top: 20px;
+  margin-top: 26px;
   margin-left: 24px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 36px;
@@ -734,7 +730,6 @@ body {
 }
 
 .slider__text {
-  margin-top: 5px;
   margin-left: 25px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
@@ -745,36 +740,32 @@ body {
 .slider__paginator {
   position: absolute;
   z-index: 1;
-  width: 22px;
   cursor: pointer;
 }
 
-.slider__paginator--right {
+.slider__paginator:last-child {
+  bottom: 20%;
   right: 0;
-  top: 52%;
-  transform: translateY(-50%);
-  padding-bottom: 40px;
+  padding-bottom: 47px;
   padding-top: 40px;
   padding-left: 40px;
-  padding-right: 42px;
+  padding-right: 20px;
 }
 
-.slider__paginator--right:hover .slider__paginator-image {
+.slider__paginator:last-child:hover .slider__paginator-image {
   transform: translateX(5px);
   transition: 300ms ease-out;
 }
 
-.slider__paginator--left {
-  left: 0;
-  top: 52%;
-  transform: translateY(-50%);
-  padding-bottom: 40px;
+.slider__paginator:first-child {
+  bottom: 20%;
+  padding-bottom: 47px;
   padding-top: 40px;
   padding-right: 40px;
   padding-left: 25px;
 }
 
-.slider__paginator--left:hover .slider__paginator-image {
+.slider__paginator:first-child:hover .slider__paginator-image {
   transform: translateX(-5px);
   transition: 300ms ease-out;
 }
@@ -794,12 +785,12 @@ body {
 
 .slider__paginator-wrapper--left {
   right: 315px;
-  bottom: 33px;
+  bottom: 37px;
 }
 
 .slider__paginator-wrapper--right {
   right: 295px;
-  bottom: 33px;
+  bottom: 37px;
 }
 
 .slider__paginator-wrapper--left::before,
@@ -818,15 +809,15 @@ body {
   background-color: #ee3643;
 }
 
-.slider__item--perf {
+.slider__item:last-child {
   display: none;
 }
 
-.slider__radio--right:checked ~ .slider__item--perf {
+.slider__radio--right:checked ~ .slider__item:last-child {
   display: flex;
 }
 
-.slider__radio--right:checked ~ .slider__item--drill {
+.slider__radio--right:checked ~ .slider__item:nth-last-child(2) {
   display: none;
 }
 
@@ -834,9 +825,10 @@ body {
   width: 195px;
   justify-content: center;
   align-self: flex-start;
-  margin-top: 115px;
+  margin-top: 122px;
   margin-left: 25px;
   margin-bottom: 23px;
+  margin-right: 400px;
 }
 
 .services__container {
@@ -846,7 +838,7 @@ body {
 
 .services {
   background-color: #f4f7f9;
-  margin-bottom: 82px;
+  margin-bottom: 81px;
 }
 
 .services__title {
@@ -1183,9 +1175,9 @@ body {
 
 .value-block__block::-webkit-inner-spin-button,
 .value-block__block::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .value-block::before {
@@ -1467,7 +1459,7 @@ body {
   justify-content: center;
 }
 
- .card:hover .card__image-wrapper {
+.card:hover .card__image-wrapper {
   display: none;
 }
 
@@ -1616,7 +1608,7 @@ body {
 }
 
 .card__price-button:hover,
-.card__price-button:focus{
+.card__price-button:focus {
   background-color: #ca2c37;
   outline: none;
 }
@@ -1742,21 +1734,18 @@ body {
 .about-company {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 84px;
+  margin-bottom: 86px;
 }
 
 .transport-companies {
   margin: 0;
   padding: 0;
+  margin-bottom: 30px;
 }
 
 .transport-companies__item {
   margin-bottom: 16px;
   list-style: none;
-}
-
-.transport-companies__item:last-child {
-  margin-bottom: 33px;
 }
 
 .transport-companies__link {
@@ -1807,7 +1796,8 @@ body {
 }
 
 .contacts__text {
-  margin: 0;;
+  margin: 0;
+  ;
   margin-bottom: 30px;
   max-width: 179px;
   font-size: 13px;
@@ -1816,7 +1806,7 @@ body {
 
 .contacts__map {
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 }
 
 .contacts__button-wraper {
@@ -1838,6 +1828,7 @@ body {
   padding: 19px 41px 18px 41px;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
+
 .footer-contact {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;

@@ -131,25 +131,27 @@
                     </li>
                 </ul>
                 <section class="promo__slider slider">
-                    <label class="slider__paginator slider__paginator--left" for="to-left">
-                        <img class="slider__paginator-image" src="img/icon-left.svg" alt="налево" width="22" height="40">
-                    </label>
-                    <label class="slider__paginator slider__paginator--right" for="to-right">
-                        <img class="slider__paginator-image" src="img/icon-right.svg" alt="направо" width="22" height="40">
-                    </label>
+                    <div class="slider__wrapper">
+                        <label class="slider__paginator" for="to-left">
+                            <img class="slider__paginator-image" src="img/icon-left.svg" alt="налево" width="22" height="40">
+                        </label>
+                        <label class="slider__paginator" for="to-right">
+                            <img class="slider__paginator-image" src="img/icon-right.svg" alt="направо" width="22" height="40">
+                        </label>
+                    </div>
                     <input class="slider__radio slider__radio--left" id="to-left" type="radio" value="first-page" name="select-page" checked>
                     <i class="slider__paginator-wrapper slider__paginator-wrapper--left"></i>
                     <input class="slider__radio slider__radio--right" id="to-right" type="radio" value="second-page" name="select-page">
                     <i class="slider__paginator-wrapper slider__paginator-wrapper--right"></i>
-                    <div class="slider__item slider__item--drill">
+                    <div class="slider__item">
                         <img class="slider__item-img" src="img/slider-1.jpg" alt="Дрель" width="620" height="266">
-                        <h4 class="slider__title slider__title--drill">Дрели</h4>
+                        <h4 class="slider__title">Дрели</h4>
                         <span class="slider__text">Соседям на радость!</span>
                         <span class="slider__button-wrapper link-button">
                             <a class="link-button__button" href="catalog.html">Открыть каталог</a>
                         </span>
                     </div>
-                    <div class="slider__item slider__item--perf">
+                    <div class="slider__item">
                         <img class="slider__item-img" src="img/slider-2.jpg" alt="Перфоратор" width="620" height="266">
                         <h4 class="slider__title">Перфораторы</h4>
                         <span class="slider__text">Настоящие мужские игрушки</span>
@@ -199,7 +201,7 @@
             <div class="popular__wrapper">
                 <h2 class="popular__title second-title">Популярные товары:</h2>
                 <span class="popular__button-wrapper link-button">
-                    <a class="link-button__button" href="#">Все популярные товары</a>
+                    <a class="link-button__button" href="catalog.html">Все популярные товары</a>
                 </span>
             </div>
             <ul class="popular__list">
