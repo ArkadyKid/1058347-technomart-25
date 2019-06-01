@@ -253,6 +253,7 @@ body {
 .customer-menu__link:hover .customer-menu__img {
   opacity: 1;
   transform: translateX(2px);
+  transition: 300ms ease-out;
 }
 
 .customer-menu__img--cart {
@@ -328,6 +329,7 @@ body {
 .header-contacts__phone:hover .header-contacts__phone-image {
   opacity: 0.5;
   transform: rotate(20deg);
+  transition: 300ms ease-out;
 }
 
 .header-contacts__phone-image {
@@ -409,6 +411,7 @@ body {
 .user-button:hover .user-button__image {
   opacity: 1;
   transform: translateX(2px);
+  transition: 300ms ease-out;
 }
 
 .user-button:active .user-button__image {
@@ -628,6 +631,7 @@ body {
 
 .promo__item--plum {
   background-color: #3bbce3;
+  margin-left: 20px;
 }
 
 .promo__item--blue {
@@ -658,6 +662,7 @@ body {
 
 .promo__item:hover .promo__img {
   transform: scale(1.1);
+  transition: 300ms ease-out;
 }
 
 .promo__wrapper {
@@ -705,22 +710,20 @@ body {
   display: flex;
   flex-direction: column;
   list-style: none;
-  min-width: 620px;
-  background-color: #201513;
-  background-image: url("../img/slider-1.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: cover;
 }
 
-.slider__item--perf {
-  background-color: #715e4d;
-  background-image: url("../img/slider-2.jpg");
+.slider__item-img {
+  position: absolute;
+  z-index: -1;
+  background-color: #201513;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .slider__title {
   margin: 0;
-  margin-top: 27px;
+  margin-top: 20px;
   margin-left: 24px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 36px;
@@ -737,10 +740,6 @@ body {
   font-size: 18px;
   line-height: 1.33;
   color: #ffffff;
-}
-
-.slider__item--hidden {
-  visibility: hidden;
 }
 
 .slider__paginator {
@@ -760,6 +759,11 @@ body {
   padding-right: 42px;
 }
 
+.slider__paginator--right:hover .slider__paginator-image {
+  transform: translateX(5px);
+  transition: 300ms ease-out;
+}
+
 .slider__paginator--left {
   left: 0;
   top: 52%;
@@ -770,6 +774,11 @@ body {
   padding-left: 25px;
 }
 
+.slider__paginator--left:hover .slider__paginator-image {
+  transform: translateX(-5px);
+  transition: 300ms ease-out;
+}
+
 .slider__radio {
   display: none;
 }
@@ -777,8 +786,7 @@ body {
 .slider__paginator-wrapper {
   position: absolute;
   z-index: 1;
-  width: 10px;
-  height: 10px;
+  padding: 5px;
   border-radius: 50%;
   background-color: #ffffff;
   cursor: pointer;
@@ -1517,6 +1525,7 @@ body {
 .card__button--green:hover::before {
   opacity: 1;
   transform: scale(1.2);
+  transition: 300ms ease-out;
 }
 
 .card__button--white {
