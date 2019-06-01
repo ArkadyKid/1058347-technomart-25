@@ -874,7 +874,6 @@ body {
   background-image: url("../img/shadow.png");
 }
 
-
 .services-slider__wrapper {
   display: flex;
   min-width: 240px;
@@ -905,7 +904,6 @@ body {
   background-color: #ffffff;
   color: #32425c;
 }
-
 
 .services-slider__title {
   margin: 0;
