@@ -245,6 +245,7 @@ body {
 
 .customer-menu__link:hover .customer-menu__img {
   opacity: 1;
+  transform: translateX(2px);
 }
 
 .customer-menu__img--cart {
@@ -314,11 +315,12 @@ body {
   font-size: 21px;
   text-decoration: none;
   line-height: 1;
-  color: #ee3643;
+  color: #e9292a;
 }
 
 .header-contacts__phone:hover .header-contacts__phone-image {
   opacity: 0.5;
+  transform: rotate(20deg);
 }
 
 .header-contacts__phone-image {
@@ -399,6 +401,7 @@ body {
 
 .user-button:hover .user-button__image {
   opacity: 1;
+  transform: translateX(2px);
 }
 
 .user-button:active .user-button__image {
@@ -1502,6 +1505,7 @@ body {
 
 .card__button--green:hover::before {
   opacity: 1;
+  transform: scale(1.2);
 }
 
 .card__button--white {
