@@ -121,8 +121,11 @@ body {
   padding-right: 55px;
 }
 
-.logo:hover {
+.logo:hover,
+.logo .footer__logo-link:focus,
+.logo .logo__link:focus {
   background-color: #ca2c37;
+  outline: none;
 }
 
 .logo:active {
@@ -528,15 +531,15 @@ body {
 
 .link-button {
   display: flex;
-  background-color: #ee3643;
   border: none;
 }
 
-.link-button:hover {
+.link-button__button:hover,
+.link-button__button:focus {
   background-color: #ca2c37;
 }
 
-.link-button:active {
+.link-button__button:active {
   background-color: #ba2732;
 }
 
@@ -553,22 +556,15 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+  background-color: #ee3643;
 }
 
-.link-button--white {
+.link-button__button--white,
+.link-button__button--white:hover,
+.link-button__button--white:focus,
+.link-button__button--white:active {
   background-color: #ffffff;
-}
-
-.link-button--white:hover {
-  background-color: #ca2c37;
-}
-
-.link-button__button--white {
   color: #000000;
-}
-
-.link-button__button--white:hover {
-  color: #ffffff;
 }
 
 .second-title {
@@ -1287,7 +1283,8 @@ body {
   cursor: pointer;
 }
 
-.filter__button:hover {
+.filter__button:hover,
+.filter__button:focus {
   border: solid 1px #bdc6ca;
 }
 
@@ -1720,7 +1717,8 @@ body {
   width: 100%;
 }
 
-.fabricator__item:hover {
+.fabricator__item:hover,
+.fabricator__item .fabricator-item__link:focus {
   box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
