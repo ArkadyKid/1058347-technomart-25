@@ -461,7 +461,7 @@ body {
   padding: 2px;
   margin-right: 10px;
   vertical-align: middle;
-  border-radius: 3px;
+  border-radius: 50%;
   background-color: #32425c;
 }
 
@@ -568,7 +568,7 @@ body {
   background-color: #ffffff;
   color: #000000;
 }
-
+git
 .second-title {
   margin: 0;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -1939,34 +1939,31 @@ body {
 
 .social__link--vk {
   display: flex;
-  width: 42px;
-  height: 42px;
+  padding: 21px;
   background-image: url("../img/icon-vk.svg");
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 21px;
+  border-radius: 50%;
   background-color: #212a3a;
 }
 
 .social__link--facebook {
   display: flex;
-  width: 42px;
-  height: 42px;
+  padding: 21px;
   background-image: url("../img/icon-fb.svg");
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 21px;
+  border-radius: 50%;
   background-color: #212a3a;
 }
 
 .social__link--instagram {
   display: flex;
-  width: 42px;
-  height: 42px;
+  padding: 21px;
   background-image: url("../img/icon-insta.svg");
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 21px;
+  border-radius: 50%;
   background-color: #212a3a;
 }
 
