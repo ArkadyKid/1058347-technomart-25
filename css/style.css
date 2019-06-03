@@ -2057,7 +2057,7 @@ body {
   top: 10px;
   padding-bottom: 20px;
   padding-left: 20px;
-
+  user-select: none;
 }
 
 .modal__wrapper {
@@ -2126,7 +2126,7 @@ body {
   padding: 5px;
   border: 2px solid #d7dcde;
   background-color: #ffffff;
-  resize: vertical;
+  resize: none;
   transition: 300ms ease-out;
 }
 

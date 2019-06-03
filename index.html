@@ -213,7 +213,7 @@
                     </div>
                     <div class="card__buttons">
                         <span class="card__wrapper">
-                            <a class="card__button card__button--green" href="#">Купить</a>
+                            <a class="card__button card__button--green" href="#" onclick="openPopup(event)">Купить</a>
                         </span>
                         <span class="card__wrapper">
                             <a class="card__button card__button--white" href="#">В закладки</a>
@@ -225,7 +225,7 @@
                     <div class="card__price-block">
                         <span class="card__old-price">32500 р.</span>
                         <p class="card__price">
-                            <a class="card__price-button" href="#">25500 р.</a>
+                            <a class="card__price-button" href="#" onclick="openPopup(event)">25500 р.</a>
                         </p>
                     </div>
                 </li>
@@ -235,7 +235,7 @@
                     </div>
                     <div class="card__buttons">
                         <span class="card__wrapper">
-                            <a class="card__button card__button--green" href="#">Купить</a>
+                            <a class="card__button card__button--green" href="#" onclick="openPopup(event)">Купить</a>
                         </span>
                         <span class="card__wrapper">
                             <a class="card__button card__button--white" href="#">В закладки</a>
@@ -247,7 +247,7 @@
                     <div class="card__price-block">
                         <span class="card__old-price">22500 р.</span>
                         <p class="card__price">
-                            <a class="card__price-button" href="#">15500 р.</a>
+                            <a class="card__price-button" href="#" onclick="openPopup(event)">15500 р.</a>
                         </p>
                     </div>
                 </li>
@@ -257,7 +257,7 @@
                     </div>
                     <div class="card__buttons">
                         <span class="card__wrapper">
-                            <a class="card__button card__button--green" href="#">Купить</a>
+                            <a class="card__button card__button--green" href="#" onclick="openPopup(event)">Купить</a>
                         </span>
                         <span class="card__wrapper">
                             <a class="card__button card__button--white" href="#">В закладки</a>
@@ -269,7 +269,7 @@
                     <div class="card__price-block">
                         <span class="card__old-price">30500 р.</span>
                         <p class="card__price">
-                            <a class="card__price-button" href="#">25500 р.</a>
+                            <a class="card__price-button" href="#" onclick="openPopup(event)">25500 р.</a>
                         </p>
                     </div>
                 </li>
@@ -282,7 +282,7 @@
                     </div>
                     <div class="card__buttons">
                         <span class="card__wrapper">
-                            <a class="card__button card__button--green" href="#">Купить</a>
+                            <a class="card__button card__button--green" href="#" onclick="openPopup(event)">Купить</a>
                         </span>
                         <span class="card__wrapper">
                             <a class="card__button card__button--white" href="#">В закладки</a>
@@ -293,7 +293,7 @@
                     </h5>
                     <div class="card__price-block">
                         <p class="card__price">
-                            <a class="card__price-button" href="#">12500 р.</a>
+                            <a class="card__price-button" href="#" onclick="openPopup(event)">12500 р.</a>
                         </p>
                     </div>
                 </li>
@@ -497,7 +497,7 @@
             </div>
         </div>
     </footer>
-    <div class="map popup">
+    <div class="map">
         <div class="map__wrapper">
             <h3 class="map__title visually-hidden">Подробная карта</h3>
             <a class="map__close close" href="#">
@@ -506,7 +506,7 @@
             <iframe class="map__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.599104365163!2d30.320894616662248!3d59.938794181876176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1558261815315!5m2!1sru!2sru" allowfullscreen width="940" height="446"></iframe>
         </div>
     </div>
-    <div class="modal popup">
+    <div class="modal">
         <div class="modal__wrapper">
             <h3 class="modal__title visually-hidden">Обратная связь</h3>
                 <a class="modal__close close" href="#">
@@ -532,7 +532,27 @@
             </form>
         </div>
     </div>
-    <script src="js/script.js"></script>
+    <div class="order-dialog">
+        <div class="order-dialog__wrapper">
+            <h3 class="order-dialog__title visually-hidden">Диалог покупки</h3>
+            <a class="order-dialog__close close" href="#">
+                <img class="close__img" src="img/close.svg" alt="закрыть окно" width="21" height="21">
+            </a>
+            <div class="order-dialog__content">
+                <img class="order-dialog__img" src="img/check.svg" alt="товар добавлен в корзину" width="66" height="66">
+                <span class="order-dialog__text">Товар добавлен в корзину!</span>
+            </div>
+            <div class="order-dialog__button">
+                <span class="order-dialog__button-link link-button">
+                    <a class="link-button__button" href="#">Оформить заказ</a>
+                </span>
+                <span class="order-dialog__button-link link-button link-button--white">
+                    <a class="link-button__button link-button__button--white" href="#">Продолжить покупки</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <script src="js/script-index.js"></script>
 </body>
 
 </html>
