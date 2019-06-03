@@ -1640,7 +1640,7 @@ body {
 .card__price-button:hover::after,
 .card__price-button:focus::after {
   border-left-color: #ca2c37;
-  transform: scale(1.1);
+  transform: scale(1.5);
 }
 
 .card__price-button:active {
