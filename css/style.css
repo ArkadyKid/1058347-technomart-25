@@ -165,7 +165,6 @@ body {
   background-color: inherit;
   opacity: 0.3;
   cursor: pointer;
-  transition: 300ms ease-out;
 }
 
 .search:hover .search__button {
@@ -208,7 +207,6 @@ body {
 
 .customer-menu {
   display: flex;
-  transition: 300ms ease-out;
 }
 
 .customer-menu__button:hover {
@@ -248,10 +246,6 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.customer-menu__link:hover {
-  opacity: 1;
-}
-
 .customer-menu__value {
   padding-left: 5px;
 }
@@ -259,11 +253,12 @@ body {
 .customer-menu__img {
   margin-right: 13px;
   opacity: 0.3;
+  transition: 300ms ease-out;
 }
 
+.customer-menu__link:hover,
 .customer-menu__link:hover .customer-menu__img {
   opacity: 1;
-  transition: 300ms ease-out;
 }
 
 .customer-menu__img--cart {
@@ -398,6 +393,7 @@ body {
 .user-button__image {
   margin-right: 8px;
   opacity: 0.3;
+  transition: 300ms ease-out;
 }
 
 .user-menu__item {
@@ -415,7 +411,6 @@ body {
 
 .user-button:hover .user-button__image {
   opacity: 1;
-  transition: 300ms ease-out;
 }
 
 .user-button:active .user-button__image {
@@ -479,9 +474,12 @@ body {
   color: #000000;
 }
 
+.name__block-image {
+  transition: 300ms ease-out;
+}
+
 .name__block-link:hover .name__block-image {
   opacity: 0.3;
-  transition: 300ms ease-out;
 }
 
 .quit__block-image {
@@ -1253,20 +1251,15 @@ body {
   border-bottom: 1px solid #b8b4ad;
 }
 
-.manufacturer__text {
-  margin-left: 35px;
-  margin-bottom: 21px;
-  font-size: 15px;
-  line-height: 1.33;
-  text-transform: uppercase;
-}
-
+.manufacturer__text,
 .battery__text {
   margin-left: 35px;
   margin-bottom: 21px;
   font-size: 15px;
   line-height: 1.33;
   text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
 }
 
 .filter {
