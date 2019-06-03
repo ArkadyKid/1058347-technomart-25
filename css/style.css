@@ -1472,14 +1472,14 @@ body {
 .card:hover .card__buttons {
   opacity: 1;
   transition-property: opacity;
-  transition-duration: 0.4s;
+  transition-duration: 400ms;
   transition-timing-function: ease-in;
 }
 
 .card:hover .card__image-wrapper {
   opacity: 0;
   transition-property: opacity;
-  transition-duration: 0.1s;
+  transition-duration: 100ms;
   transition-timing-function: ease-in;
 }
 
@@ -1612,6 +1612,7 @@ body {
   padding-left: 9px;
   min-width: 123px;
   background-color: #ee3643;
+  transition: 200ms ease-in;
 }
 
 .card__price-button::after {
@@ -1625,17 +1626,21 @@ body {
   border-right-width: 0;
   border-top-color: transparent;
   border-bottom-color: transparent;
+  transition: 200ms ease-in;
 }
 
 .card__price-button:hover,
 .card__price-button:focus {
   background-color: #ca2c37;
   outline: none;
+  transform: scale(1.1);
+
 }
 
 .card__price-button:hover::after,
 .card__price-button:focus::after {
   border-left-color: #ca2c37;
+  transform: scale(1.1);
 }
 
 .card__price-button:active {
