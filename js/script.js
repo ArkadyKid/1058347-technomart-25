@@ -27,10 +27,10 @@ openPopupMap.addEventListener('click', function(evt) {
 });
 closePopupMap.addEventListener('click', function(evt) {
   evt.preventDefault();
-  popup.classList.remove(mapShow);
+  popupMap.classList.remove(mapShow);
 })
 document.addEventListener('keydown', function(evt) {
   if (evt.keyCode===27){
-    popupMap.classList.remove (mapShow);
+    popupMap.classList.remove(mapShow);
   }
 })
