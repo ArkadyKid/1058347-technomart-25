@@ -2451,6 +2451,10 @@ body {
 }
 /* popup */
 
+.overflow {
+  overflow: hidden;
+}
+
 .map,
 .modal,
 .order-dialog {
@@ -2460,7 +2464,6 @@ body {
   min-height: 100%;
   display: none;
   background-color: rgba(0,0,0,0.5);
-  overflow: hidden;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
