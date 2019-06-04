@@ -73,6 +73,11 @@ body {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(1px 1px 1px 1px);
@@ -1768,6 +1773,11 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.card__img {
+  width: 218px;
+  height: 170px;
 }
 
 .card__buttons {
