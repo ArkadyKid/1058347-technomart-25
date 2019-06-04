@@ -1042,18 +1042,18 @@ body {
 
 .services {
   background-color: #f4f7f9;
-  margin-bottom: 81px;
+  margin-bottom: 29px;
 }
 
 .services__title {
   margin-top: 63px;
+  margin-bottom: 26px;
   color: #000000;
 }
 
 .services__text {
   max-width: 412px;
   margin: 0;
-  margin-top: 26px;
   font-size: 13px;
 }
 
@@ -1121,6 +1121,7 @@ body {
 
 .services-slider__title {
   margin: 0;
+  margin-bottom: 25px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 36px;
   line-height: 1;
@@ -1130,7 +1131,6 @@ body {
 
 .services-slider__text {
   margin: 0;
-  margin-top: 25px;
   font-family: "PTSans";
   font-size: 13px;
   font-weight: 400;
@@ -1291,6 +1291,7 @@ body {
 }
 
 .category__about {
+  padding-top: 10px;
   padding-bottom: 68px;
   background-color: #f2f6f8;
 }
@@ -1306,8 +1307,8 @@ body {
 .about__title {
   margin: 0;
   margin-bottom: 28px;
+  margin-top: 55px;
   padding: 0;
-  padding-top: 65px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 1;
@@ -2183,6 +2184,7 @@ body {
 
 .description__title {
   margin-bottom: 26px;
+  margin-top: 52px;
   color: #000000;
 }
 
@@ -2200,6 +2202,7 @@ body {
 
 .contacts__title {
   margin-bottom: 26px;
+  margin-top: 52px;
   color: #000000;
 }
 
