@@ -1537,7 +1537,7 @@ img {
 
 .filter {
   width: calc(100% / 4 - 14px);
-  margin-right: 21px;
+  margin-right: 20px;
 }
 
 .filter__battery {
@@ -1697,9 +1697,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0;
@@ -1729,9 +1726,6 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .card {
@@ -1747,6 +1741,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 20px;
+  margin-right: 20px;
   border: 1px solid #eaeaea;
   background-color: #ffffff;
   list-style: none;
@@ -1755,13 +1750,21 @@ img {
   transition: 300ms ease-out;
 }
 
+.popular__card:nth-child(4n) {
+  margin-right: 0;
+}
+
+.features__card:nth-child(3n) {
+  margin-right: 0;
+}
+
 .card:hover {
   -webkit-box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
           box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .features__card {
-  width: calc(100% / 3 - 12px);
+  width: calc(100% / 3 - 14px);
 }
 
 .popular__card {
