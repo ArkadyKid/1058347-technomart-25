@@ -1,53 +1,59 @@
-var modal = document.querySelector('.modal');
-var openModal = document.querySelector('.contacts__button-link');
-var closeModal = modal.querySelector('.close');
-var modalShow = 'modal--show';
-var popupMap = document.querySelector('.map');
-var openPopupMap = document.querySelector('.contacts-map__link');
-var closePopupMap = popupMap.querySelector('.close');
-var mapShow = 'map--show';
-var popup = document.querySelector('.order-dialog');
-var orderDialog = 'order-dialog--show';
-var closePopup = popup.querySelector('.close');
+var modalElement = document.querySelector('.modal');
+var openModalElement = document.querySelector('.contacts__button-link');
+var closeModalElement = modalElement.querySelector('.close');
+var modalShowClass = 'modal--show';
+var popupMapElement = document.querySelector('.map');
+var openPopupMapElement = document.querySelector('.contacts-map__link');
+var closePopupMapElement = popupMapElement.querySelector('.close');
+var mapShowClass = 'map--show';
+var popupElement = document.querySelector('.order-dialog');
+var orderDialogClass = 'order-dialog--show';
+var closePopupElement = popupElement.querySelector('.close');
+
 var openPopup = function(evt) {
   evt.preventDefault();
-  popup.classList.add(orderDialog);
+  popupElement.classList.add(orderDialogClass);
 };
 
-openModal.addEventListener('click', function(evt) {
+openModalElement.addEventListener('click', function(evt) {
   evt.preventDefault();
-  modal.classList.add(modalShow);
+  modalElement.classList.add(modalShowClass);
 });
-closeModal.addEventListener('click', function(evt) {
-  evt.preventDefault();
-  modal.classList.remove(modalShow);
-})
-document.addEventListener('keydown', function(evt) {
-  if (evt.keyCode===27){
-    modal.classList.remove(modalShow);
-  }
-})
 
-openPopupMap.addEventListener('click', function(evt) {
+closeModalElement.addEventListener('click', function(evt) {
   evt.preventDefault();
-  popupMap.classList.add(mapShow);
+  modalElement.classList.remove(modalShowClass);
 });
-closePopupMap.addEventListener('click', function(evt) {
-  evt.preventDefault();
-  popupMap.classList.remove(mapShow);
-})
-document.addEventListener('keydown', function(evt) {
-  if (evt.keyCode===27){
-    popupMap.classList.remove(mapShow);
-  }
-})
 
-closePopup.addEventListener('click', function(evt) {
-  evt.preventDefault();
-  popup.classList.remove(orderDialog);
-})
 document.addEventListener('keydown', function(evt) {
-  if (evt.keyCode===27){
-  popup.classList.remove(orderDialog);
- }
-})
+  if (evt.keyCode === 27){
+    modalElement.classList.remove(modalShowClass);
+  }
+});
+
+openPopupMapElement.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  popupMapElement.classList.add(mapShowClass);
+});
+
+closePopupMapElement.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  popupMapElement.classList.remove(mapShowClass);
+});
+
+document.addEventListener('keydown', function(evt) {
+  if (evt.keyCode === 27){
+    popupMapElement.classList.remove(mapShowClass);
+  }
+});
+
+closePopupElement.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  popupElement.classList.remove(orderDialogClass);
+});
+
+document.addEventListener('keydown', function(evt) {
+  if (evt.keyCode === 27){
+    popupElement.classList.remove(orderDialogClass);
+  }
+});

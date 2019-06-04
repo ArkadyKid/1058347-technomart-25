@@ -1,17 +1,19 @@
-var popup = document.querySelector('.order-dialog');
-var orderDialog = 'order-dialog--show';
-var closePopup = popup.querySelector('.close');
+var popupElement = document.querySelector('.order-dialog');
+var orderDialogClass = 'order-dialog--show';
+var closePopupElement = popupElement.querySelector('.close');
+
 var openPopup = function(evt) {
   evt.preventDefault();
-  popup.classList.add(orderDialog);
+  popupElement.classList.add(orderDialogClass);
 };
 
-closePopup.addEventListener('click', function(evt) {
+closePopupElement.addEventListener('click', function(evt) {
   evt.preventDefault();
-  popup.classList.remove(orderDialog);
-})
+  popupElement.classList.remove(orderDialogClass);
+});
+
 document.addEventListener('keydown', function(evt) {
-  if (evt.keyCode===27){
-  popup.classList.remove(orderDialog);
- }
-})
+  if (evt.keyCode === 27){
+    popupElement.classList.remove(orderDialogClass);
+  }
+});
