@@ -559,6 +559,7 @@ img {
 .user-menu__info:not(:first-child)::before {
   content: "";
   display: inline-block;
+  vertical-align: top;
   padding: 2px;
   margin-right: 10px;
   vertical-align: middle;
@@ -1446,11 +1447,13 @@ img {
 
 .manufacturer__wrapper {
   display: inline-block;
+  vertical-align: top;
   position: relative;
 }
 
 .battery__wrapper {
   display: inline-block;
+  vertical-align: top;
   position: relative;
   width: 25px;
   border-radius: 50%;
@@ -1962,6 +1965,7 @@ img {
   top: 0;
   right: -19px;
   display: inline-block;
+  vertical-align: top;
   border: 19px solid #ffffff;
   border-left-color: #ee3643;
   border-right-width: 0;
