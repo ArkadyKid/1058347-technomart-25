@@ -1,24 +1,36 @@
-var bodyElement = document.querySelector('.body');
-var overflowClass = 'overflow';
-var popupElement = document.querySelector('.order-dialog');
-var orderDialogClass = 'order-dialog--show';
-var closePopupElement = popupElement.querySelector('.close');
+'use strict';
+(function () {
 
-var openPopup = function(evt) {
-  evt.preventDefault();
-  popupElement.classList.add(orderDialogClass);
-  bodyElement.classList.add(overflowClass);
-};
+  var overflowClass = 'overflow';
+  var orderDialogClass = 'order-dialog--show';
 
-closePopupElement.addEventListener('click', function(evt) {
-  evt.preventDefault();
-  popupElement.classList.remove(orderDialogClass);
-  bodyElement.classList.remove(overflowClass);
-});
+  var bodyElement = document.querySelector('body');
+  var popupElement = document.querySelector('.order-dialog');
+  var openButtonsElement = document.querySelectorAll('.card__price-button, .card__button--green');
+  var closePopupElement = popupElement.querySelector('.close');
 
-document.addEventListener('keydown', function(evt) {
-  if (evt.keyCode === 27){
+  var openPopup = function(evt) {
+    evt.preventDefault();
+    popupElement.classList.add(orderDialogClass);
+    bodyElement.classList.add(overflowClass);
+  };
+  var mouseClosePopup = function(evt) {
+    evt.preventDefault();
     popupElement.classList.remove(orderDialogClass);
     bodyElement.classList.remove(overflowClass);
-  }
-});
+  };
+
+  openButtonsElement.forEach(function(element) {
+    element.addEventListener('click', openPopup);
+  });
+
+  popupElement.addEventListener('click', mouseClosePopup(evt)
+  );
+
+  document.addEventListener('keydown', function(evt) {
+    if (evt.keyCode === 27){
+      popupElement.classList.remove(orderDialogClass);
+      bodyElement.classList.remove(overflowClass);
+    }
+  });
+}());
