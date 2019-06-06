@@ -14,6 +14,7 @@
   var popupMapElement = document.querySelector('.map');
   var openModalElement = document.querySelector('.contacts__button-link');
   var openPopupMapElement = document.querySelector('.contacts-map__link');
+  var modalFocusElement = modalElement.querySelector('.modal__input');
 
   var openMap = function(evt) {
     evt.preventDefault();
@@ -31,6 +32,7 @@
     evt.preventDefault();
     modalElement.classList.add(modalShowClass);
     bodyElement.classList.add(overflowClass);
+    modalFocusElement.focus();
   };
 
   var mouseClose = function(evt) {
