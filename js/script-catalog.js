@@ -38,4 +38,5 @@
 
   document.addEventListener('keydown', escClosePopup
   );
+
 }());
