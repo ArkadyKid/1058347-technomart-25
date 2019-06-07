@@ -1916,6 +1916,7 @@ img {
 .contacts__map {
   margin: 0;
   margin-bottom: 30px;
+  background-color: #eeeae3;
 }
 
 .contacts__button-wraper {
