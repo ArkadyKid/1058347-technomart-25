@@ -341,6 +341,7 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  max-width: 447px;
 }
 
 .customer-menu__button {
@@ -349,6 +350,10 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+}
+
+.customer-menu__button:last-child {
+  margin-left: auto;
 }
 
 .customer-menu__button:hover {
