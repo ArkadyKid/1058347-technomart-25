@@ -6,6 +6,10 @@
   var mapShowClass = 'map--show';
   var orderDialogClass = 'order-dialog--show';
   var modalErrorClass = 'modal__error';
+  var nameStorage = '';
+  var emailStorage = '';
+
+  var isStorageSupport = true;
 
   var openButtonsElement = document.querySelectorAll('.card__price-button, .card__button--green');
   var closeElement = document.querySelectorAll('.close');
@@ -20,15 +24,6 @@
   var modalNameElement = modalElement.querySelector('#input-name');
   var modalEmailElement = modalElement.querySelector('#input-email');
   var modalTextElement = modalElement.querySelector('#input-text');
-
-  var isStorageSupport = true;
-  var storage = "";
-
-  try {
-    storage = localStorage.getItem('modalNameElement');
-  } catch (error) {
-    isStorageSupport = false;
-  }
 
   var openMap = function(evt) {
     evt.preventDefault();
@@ -47,9 +42,10 @@
     modalElement.classList.add(modalShowClass);
     bodyElement.classList.add(overflowClass);
 
-    if (storage) {
-      modalNameElement.value = storage;
-      modalEmailElement.focus();
+    if (nameStorage && emailStorage) {
+      modalNameElement.value = nameStorage;
+      modalEmailElement.value = emailStorage;
+      modalTextElement.focus();
     } else {
       modalNameElement.focus();
     }
@@ -65,7 +61,6 @@
       if (isStorageSupport) {
         localStorage.setItem('modalNameElement', modalNameElement.value);
         localStorage.setItem('modalEmailElement', modalEmailElement.value);
-        localStorage.setItem('modalTextElement', modalTextElement.value);
       }
     }
   };
@@ -87,6 +82,13 @@
       bodyElement.classList.remove(overflowClass);
     }
   };
+
+  try {
+    nameStorage = localStorage.getItem('modalNameElement');
+    emailStorage = localStorage.getItem('modalEmailElement');
+  } catch (error) {
+    isStorageSupport = false;
+  }
 
   modalFormClass.addEventListener('submit', modalLocalStorage
   );
