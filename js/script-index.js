@@ -46,6 +46,7 @@
     evt.preventDefault();
     modalElement.classList.add(modalShowClass);
     bodyElement.classList.add(overflowClass);
+
     if (storage) {
       modalNameElement.value = storage;
       modalEmailElement.focus();
@@ -55,10 +56,12 @@
   };
 
   var modalLocalStorage = function(evt) {
+
     if (!modalNameElement.value || !modalEmailElement.value || !modalTextElement.value) {
       evt.preventDefault();
       modalWrapper.classList.add(modalErrorClass);
     } else {
+
       if (isStorageSupport) {
         localStorage.setItem('modalNameElement', modalNameElement.value);
         localStorage.setItem('modalEmailElement', modalEmailElement.value);
@@ -76,6 +79,7 @@
   };
 
   var escClose = function(evt) {
+
     if (evt.keyCode === 27){
       popupElement.classList.remove(orderDialogClass);
       modalElement.classList.remove(modalShowClass);

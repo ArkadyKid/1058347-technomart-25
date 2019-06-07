@@ -22,6 +22,7 @@
   };
 
   var escClosePopup = function(evt) {
+
     if (evt.keyCode === 27){
       popupElement.classList.remove(orderDialogClass);
       bodyElement.classList.remove(overflowClass);

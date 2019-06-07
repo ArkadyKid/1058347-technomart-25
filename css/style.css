@@ -374,14 +374,16 @@ img {
   min-width: 270px;
 }
 
-.header-contacts__wrapper {
+.header-contacts__phones {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   border: 3px solid #ffffff;
 }
 
 .header-contacts__phone {
+  display: flex;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-right: 35px;
@@ -392,8 +394,8 @@ img {
   color: #e9292a;
 }
 
-.header-contacts__phone-image {
-  margin-right: 34px;
+.header-contacts__phone-wrapper {
+  margin-left: 34px;
 }
 
 .header-contacts__address {
