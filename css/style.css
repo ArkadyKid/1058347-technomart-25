@@ -1917,6 +1917,7 @@ img {
   margin: 0;
   margin-bottom: 30px;
   background-color: #eeeae3;
+  font-size: 0;
 }
 
 .contacts__button-wraper {
