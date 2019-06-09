@@ -1,13 +1,12 @@
 'use strict';
 (function () {
-
   var overflowClass = 'overflow';
   var orderDialogClass = 'order-dialog--show';
 
-  var openButtonsElement = document.querySelectorAll('.card__price-button, .card__button--green');
-  var closeElement = document.querySelectorAll('.close');
-  var bodyElement = document.querySelector('body');
   var popupElement = document.querySelector('.order-dialog');
+  var openButtonsElement = document.querySelectorAll('.card__price-button, .card__button--green');
+  var bodyElement = document.querySelector('body');
+  var closeElement = document.querySelectorAll('.close, .link-button__button--white, .overlay');
 
   var openPopup = function(evt) {
     evt.preventDefault();
@@ -22,7 +21,6 @@
   };
 
   var escClosePopup = function(evt) {
-
     if (evt.keyCode === 27){
       popupElement.classList.remove(orderDialogClass);
       bodyElement.classList.remove(overflowClass);

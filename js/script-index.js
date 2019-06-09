@@ -1,6 +1,5 @@
 'use strict';
 (function () {
-
   var overflowClass = 'overflow';
   var modalShowClass = 'modal--show';
   var mapShowClass = 'map--show';
@@ -12,7 +11,7 @@
   var isStorageSupport = true;
 
   var openButtonsElement = document.querySelectorAll('.card__price-button, .card__button--green');
-  var closeElement = document.querySelectorAll('.close');
+  var closeElement = document.querySelectorAll('.close, .link-button__button--white, .overlay');
   var bodyElement = document.querySelector('body');
   var popupElement = document.querySelector('.order-dialog');
   var modalElement = document.querySelector('.modal');
@@ -52,7 +51,6 @@
   };
 
   var modalLocalStorage = function(evt) {
-
     if (!modalNameElement.value || !modalEmailElement.value || !modalTextElement.value) {
       evt.preventDefault();
       modalWrapper.classList.add(modalErrorClass);
@@ -74,7 +72,6 @@
   };
 
   var escClose = function(evt) {
-
     if (evt.keyCode === 27){
       popupElement.classList.remove(orderDialogClass);
       modalElement.classList.remove(modalShowClass);
