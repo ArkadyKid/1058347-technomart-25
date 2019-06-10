@@ -1039,6 +1039,7 @@ img {
 .slider__list {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .slider__item {
@@ -1051,7 +1052,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 266px;
-  width: 620px;
+  width: 100%;
 }
 
 .slider__item-img {
@@ -1179,8 +1180,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
   margin-top: auto;
   margin-bottom: 23px;
 }
