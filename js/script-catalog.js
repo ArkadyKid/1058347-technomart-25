@@ -17,7 +17,7 @@
   var bookmarksValue = function(evt) {
     evt.preventDefault();
     linkBookmarksElement.classList.add(linkRedClass);
-    valueBookmarksElement.innerHTML ++;
+    valueBookmarksElement.innerHTML++;
   };
 
   var openPopup = function(evt) {
@@ -25,7 +25,7 @@
     popupElement.classList.add(orderDialogClass);
     bodyElement.classList.add(overflowClass);
     linkCartElement.classList.add(linkRedClass);
-    valueCartElement.innerHTML ++;
+    valueCartElement.innerHTML++;
   };
 
   var mouseClose = function(evt) {
