@@ -1349,6 +1349,7 @@ img {
 .filter {
   width: calc(100% / 4 - 14px);
   margin-right: 20px;
+  margin-bottom: 60px;
 }
 
 .filter__battery {
