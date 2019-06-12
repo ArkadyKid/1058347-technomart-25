@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -67,7 +67,7 @@
                         </li>
                         <li class="user-menu__item quit__block">
                             <a class="quit__block-link user-button" href="quit.html">
-                                <img class="user-button__image" src="img/icon-logout.svg" alt="выход" width="20" height="17">
+                                <img class="user-button__image" src="img/icon-logout.svg" alt="выход" width="20" height="17" aria-label="выход">
                             </a>
                         </li>
                     </ul>
@@ -526,13 +526,9 @@
                 <img class="order-dialog__img" src="img/check.svg" alt="товар добавлен в корзину" width="66" height="66">
                 <span class="order-dialog__text">Товар добавлен в корзину!</span>
             </div>
-            <div class="order-dialog__button">
-                <span class="order-dialog__button-link link-button">
-                    <a class="link-button__button" href="#">Оформить заказ</a>
-                </span>
-                <span class="order-dialog__button-link link-button link-button--white">
-                    <a class="link-button__button link-button__button--white" href="#">Продолжить покупки</a>
-                </span>
+            <div class="order-dialog__buttons">
+                <a class="order-dialog__button link-button__button" href="#">Оформить заказ</a>
+                <a class="order-dialog__button link-button__button link-button__button--white" href="#">Продолжить покупки</a>
             </div>
         </div>
         <div class="overlay"></div>
