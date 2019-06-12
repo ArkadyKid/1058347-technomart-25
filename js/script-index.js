@@ -1,6 +1,5 @@
 'use strict';
 (function () {
-  var overflowClass = 'overflow';
   var modalShowClass = 'modal--show';
   var mapShowClass = 'map--show';
   var orderDialogClass = 'order-dialog--show';
@@ -11,9 +10,12 @@
 
   var isStorageSupport = true;
 
-  var addBookmarksElement = document.querySelectorAll('.card__button--white');
-  var bodyElement = document.querySelector('body');
-  var closeElement = document.querySelectorAll('.close, .link-button__button--white, .overlay');
+  var addBookmarksList = document.querySelectorAll('.card__button--white');
+  var addBookmarksArray = Array.prototype.slice.call(addBookmarksList);
+  var closeList = document.querySelectorAll('.close, .link-button__button--white, .overlay');
+  var closeArray = Array.prototype.slice.call(closeList);
+  var openButtonsList = document.querySelectorAll('.card__price-button, .card__button--green');
+  var openButtonsArray = Array.prototype.slice.call(openButtonsList);
   var linkBookmarksElement = document.querySelector('.customer-menu__link--bookmark');
   var linkCartElement = document.querySelector('.customer-menu__link--cart');
   var modalElement = document.querySelector('.modal');
@@ -22,8 +24,7 @@
   var modalNameElement = modalElement.querySelector('#input-name');
   var modalEmailElement = modalElement.querySelector('#input-email');
   var modalTextElement = modalElement.querySelector('#input-text');
-  var openButtonsElement = document.querySelectorAll('.card__price-button, .card__button--green');
-  var openModalElement = document.querySelector('.contacts__button-link');
+  var openModalElement = document.querySelector('.contacts__button');
   var openPopupMapElement = document.querySelector('.contacts-map__link');
   var popupElement = document.querySelector('.order-dialog');
   var popupMapElement = document.querySelector('.map');
@@ -33,7 +34,6 @@
   var openMap = function(evt) {
     evt.preventDefault();
     popupMapElement.classList.add(mapShowClass);
-    bodyElement.classList.add(overflowClass);
   };
 
   var bookmarksValue = function(evt) {
@@ -45,7 +45,6 @@
   var openPopup = function(evt) {
     evt.preventDefault();
     popupElement.classList.add(orderDialogClass);
-    bodyElement.classList.add(overflowClass);
     linkCartElement.classList.add(linkRedClass);
     valueCartElement.innerHTML++;
   };
@@ -53,7 +52,6 @@
   var openModal = function(evt) {
     evt.preventDefault();
     modalElement.classList.add(modalShowClass);
-    bodyElement.classList.add(overflowClass);
 
     if (nameStorage && emailStorage) {
       modalNameElement.value = nameStorage;
@@ -82,7 +80,6 @@
     popupElement.classList.remove(orderDialogClass);
     modalElement.classList.remove(modalShowClass);
     popupMapElement.classList.remove(mapShowClass);
-    bodyElement.classList.remove(overflowClass);
   };
 
   var escClose = function(evt) {
@@ -90,7 +87,6 @@
       popupElement.classList.remove(orderDialogClass);
       modalElement.classList.remove(modalShowClass);
       popupMapElement.classList.remove(mapShowClass);
-      bodyElement.classList.remove(overflowClass);
     }
   };
 
@@ -104,11 +100,11 @@
   modalFormElement.addEventListener('submit', modalLocalStorage
   );
 
-  openButtonsElement.forEach(function(element) {
+  openButtonsArray.forEach(function(element) {
     element.addEventListener('click', openPopup);
   });
 
-  addBookmarksElement.forEach(function(element) {
+  addBookmarksArray.forEach(function(element) {
     element.addEventListener ('click', bookmarksValue);
   });
 
@@ -121,7 +117,7 @@
   document.addEventListener('keydown', escClose
   );
 
-  closeElement.forEach(function(element) {
+  closeArray.forEach(function(element) {
     element.addEventListener('click', mouseClose);
   });
 
